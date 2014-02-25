@@ -1,0 +1,43 @@
+> Usage: id [OPTION]... [USERNAME]
+Print user and group information for the specified USERNAME,
+or (when USERNAME omitted) for the current user.
+
+  -a              ignore, for compatibility with other versions
+  -Z, --context   print only the security context of the current user
+  -g, --group     print only the effective group ID
+  -G, --groups    print all group IDs
+  -n, --name      print a name instead of a number, for -ugG
+  -r, --real      print the real ID instead of the effective ID, with -ugG
+  -u, --user      print only the effective user ID
+      --help     display this help and exit
+      --version  output version information and exit
+
+Without any OPTION, print some useful set of identified information.
+
+Report id bugs to bug-coreutils@gnu.org
+GNU coreutils home page: <http://www.gnu.org/software/coreutils/>
+General help using GNU software: <http://www.gnu.org/gethelp/>
+For complete documentation, run: info coreutils 'id invocation'
+> Usage: uname [OPTION]...
+Print certain system information.  With no OPTION, same as -s.
+
+  -a, --all                print all information, in the following order,
+                             except omit -p and -i if unknown:
+  -s, --kernel-name        print the kernel name
+  -n, --nodename           print the network node hostname
+  -r, --kernel-release     print the kernel release
+  -v, --kernel-version     print the kernel version
+  -m, --machine            print the machine hardware name
+  -p, --processor          print the processor type or "unknown"
+  -i, --hardware-platform  print the hardware platform or "unknown"
+  -o, --operating-system   print the operating system
+      --help     display this help and exit
+      --version  output version information and exit
+
+Report uname bugs to bug-coreutils@gnu.org
+GNU coreutils home page: <http://www.gnu.org/software/coreutils/>
+General help using GNU software: <http://www.gnu.org/gethelp/>
+For complete documentation, run: info coreutils 'uname invocation'
+> CYGWIN_NT-6.1-WOW64 tudalex-PC 1.7.17(0.262/5/3) 2012-10-19 14:39 i686 Cygwin
+> CYGWIN_NT-6.1-WOW64 i686
+> 

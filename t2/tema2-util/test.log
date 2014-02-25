@@ -1,0 +1,4470 @@
+-----------------------------
+start tests on Wed Apr 10 23:24:14 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Assertion fail_unless(ret == MPI_ERR_OTHER) failed at test_double_init.c:14
+Assertion fail_unless(ret == MPI_ERR_OTHER) failed at test_double_init.c:14
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+Assertion fail_unless(flag == 0) failed at test_before_after.c:36
+Assertion fail_unless(flag == 0) failed at test_before_after.c:36
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+Assertion fail_if(received != MAGIC) failed at test_send_recv.c:40
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_send_recv.c:32
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+Assertion fail_if(stat.MPI_TAG != TAG) failed at test_send_recv_array.c:45
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_send_recv_array.c:36
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_ring.c:31
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+test 8 end
+test 9 start
+running ./mpirun -np 6 _test/bin/test_matrix_multiply
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:77
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+test 9 end
+end tests on Wed Apr 10 23:24:15 EEST 2013
+-----------------------------
+start tests on Thu Apr 11 12:38:46 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Assertion fail_unless(ret == MPI_ERR_OTHER) failed at test_double_init.c:14
+Assertion fail_unless(ret == MPI_ERR_OTHER) failed at test_double_init.c:14
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+Assertion fail_unless(flag == 0) failed at test_before_after.c:36
+Assertion fail_unless(flag == 0) failed at test_before_after.c:36
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_send_recv.c:32
+Assertion fail_if(received != MAGIC) failed at test_send_recv.c:40
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+Assertion fail_if(stat.MPI_TAG != TAG) failed at test_send_recv_array.c:45
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_send_recv_array.c:36
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_ring.c:31
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+test 8 end
+test 9 start
+running ./mpirun -np 6 _test/bin/test_matrix_multiply
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:77
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+test 9 end
+end tests on Thu Apr 11 12:38:47 EEST 2013
+-----------------------------
+start tests on Thu Apr 11 12:39:17 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Assertion fail_unless(ret == MPI_ERR_OTHER) failed at test_double_init.c:14
+Assertion fail_unless(ret == MPI_ERR_OTHER) failed at test_double_init.c:14
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+Assertion fail_unless(flag == 0) failed at test_before_after.c:36
+Assertion fail_unless(flag == 0) failed at test_before_after.c:36
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_send_recv.c:32
+Assertion fail_if(received != MAGIC) failed at test_send_recv.c:40
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_send_recv_array.c:36
+Assertion fail_if(stat.MPI_TAG != TAG) failed at test_send_recv_array.c:45
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_ring.c:31
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+test 8 end
+test 9 start
+running ./mpirun -np 6 _test/bin/test_matrix_multiply
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:77
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+test 9 end
+end tests on Thu Apr 11 12:39:17 EEST 2013
+-----------------------------
+start tests on Thu Apr 11 12:41:02 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_simple.c:11
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_simple.c:11
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_double_init.c:11
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_double_init.c:11
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_double_finalize.c:11
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_double_finalize.c:11
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+Assertion fail_unless(flag == 0) failed at test_before_after.c:36
+Assertion fail_unless(flag == 0) failed at test_before_after.c:36
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_send_recv.c:20
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_send_recv.c:20
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_send_recv_array.c:21
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_send_recv_array.c:21
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_ring.c:19
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_ring.c:19
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_ring.c:19
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_ring.c:19
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_ring.c:19
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_ring.c:19
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_ring.c:19
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_ring.c:19
+test 8 end
+test 9 start
+running ./mpirun -np 6 _test/bin/test_matrix_multiply
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:176
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:176
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:176
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:176
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:176
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:176
+test 9 end
+end tests on Thu Apr 11 12:41:02 EEST 2013
+-----------------------------
+start tests on Thu Apr 11 12:47:30 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+Assertion fail_unless(flag == 0) failed at test_before_after.c:36
+Assertion fail_unless(flag == 0) failed at test_before_after.c:36
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_send_recv.c:32
+Assertion fail_if(received != MAGIC) failed at test_send_recv.c:40
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_send_recv_array.c:36
+Assertion fail_if(stat.MPI_TAG != TAG) failed at test_send_recv_array.c:45
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_ring.c:31
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+test 8 end
+test 9 start
+running ./mpirun -np 6 _test/bin/test_matrix_multiply
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:77
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+test 9 end
+end tests on Thu Apr 11 12:47:31 EEST 2013
+-----------------------------
+start tests on Thu Apr 11 12:49:17 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+Assertion fail_if(received != MAGIC) failed at test_send_recv.c:40
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_send_recv.c:32
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+Assertion fail_if(stat.MPI_TAG != TAG) failed at test_send_recv_array.c:45
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_send_recv_array.c:36
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_ring.c:31
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+test 8 end
+test 9 start
+running ./mpirun -np 6 _test/bin/test_matrix_multiply
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:77
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+test 9 end
+end tests on Thu Apr 11 12:49:17 EEST 2013
+-----------------------------
+start tests on Thu Apr 11 12:58:54 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_send_recv.c:32
+Assertion fail_if(received != MAGIC) failed at test_send_recv.c:40
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+Assertion fail_if(stat.MPI_TAG != TAG) failed at test_send_recv_array.c:45
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_send_recv_array.c:36
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_ring.c:31
+test 8 end
+test 9 start
+running ./mpirun -np 6 _test/bin/test_matrix_multiply
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:77
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+test 9 end
+end tests on Thu Apr 11 12:58:54 EEST 2013
+-----------------------------
+start tests on Thu Apr 11 12:59:59 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+Assertion fail_if(received != MAGIC) failed at test_send_recv.c:40
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_send_recv.c:32
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_send_recv_array.c:36
+Assertion fail_if(stat.MPI_TAG != TAG) failed at test_send_recv_array.c:45
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_ring.c:31
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+test 8 end
+test 9 start
+running ./mpirun -np 6 _test/bin/test_matrix_multiply
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:77
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+test 9 end
+end tests on Thu Apr 11 12:59:59 EEST 2013
+-----------------------------
+start tests on Thu Apr 11 13:19:57 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_send_recv.c:32
+Assertion fail_if(received != MAGIC) failed at test_send_recv.c:40
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_send_recv_array.c:36
+Assertion fail_if(stat.MPI_TAG != TAG) failed at test_send_recv_array.c:45
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_ring.c:31
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+test 8 end
+test 9 start
+running ./mpirun -np 6 _test/bin/test_matrix_multiply
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:77
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+test 9 end
+end tests on Thu Apr 11 13:19:57 EEST 2013
+-----------------------------
+start tests on Thu Apr 11 13:48:20 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 32066 was killed by signal 9
+Process 32068 was killed by signal 9
+Process 32070 was killed by signal 9
+Process 32069 was killed by signal 9
+Process 32067 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 32082 terminated with exit status 0
+Process 32081 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 32089 terminated with exit status 0
+Process 32090 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 32097 terminated with exit status 0
+Process 32098 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+Process 32106 was killed by signal 11
+Process 32105 was killed by signal 11
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+Assertion fail_if(received != MAGIC) failed at test_send_recv.c:40
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_send_recv.c:32
+Process 32115 terminated with exit status 1
+Process 32116 terminated with exit status 1
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+Assertion fail_if(stat.MPI_TAG != TAG) failed at test_send_recv_array.c:45
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_send_recv_array.c:36
+Process 32123 terminated with exit status 1
+Process 32124 terminated with exit status 1
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_ring.c:31
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 32131 terminated with exit status 1
+Process 32132 terminated with exit status 1
+Process 32133 terminated with exit status 1
+Process 32134 terminated with exit status 1
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 32135 terminated with exit status 1
+Process 32136 terminated with exit status 1
+Process 32137 terminated with exit status 1
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 32138 terminated with exit status 1
+test 8 end
+test 9 start
+running ./mpirun -np 6 _test/bin/test_matrix_multiply
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:77
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Process 32145 terminated with exit status 1
+Process 32146 terminated with exit status 1
+Process 32149 terminated with exit status 1
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Process 32148 terminated with exit status 1
+Process 32150 terminated with exit status 1
+Process 32147 terminated with exit status 1
+test 9 end
+end tests on Thu Apr 11 13:48:21 EEST 2013
+-----------------------------
+start tests on Thu Apr 11 13:49:17 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 32226 was killed by signal 9
+Process 32227 was killed by signal 9
+Process 32228 was killed by signal 9
+Process 32229 was killed by signal 9
+Process 32230 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 32241 terminated with exit status 0
+Process 32242 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 32249 terminated with exit status 0
+Process 32250 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 32257 terminated with exit status 0
+Process 32258 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+Assertion fail_unless(ret == MPI_ERR_OTHER) failed at test_before_after.c:19
+Assertion fail_unless(ret == MPI_ERR_OTHER) failed at test_before_after.c:19
+Process 32265 terminated with exit status 1
+Process 32266 terminated with exit status 1
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+Assertion fail_if(received != MAGIC) failed at test_send_recv.c:40
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_send_recv.c:32
+Process 32273 terminated with exit status 1
+Process 32274 terminated with exit status 1
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_send_recv_array.c:36
+Assertion fail_if(stat.MPI_TAG != TAG) failed at test_send_recv_array.c:45
+Process 32281 terminated with exit status 1
+Process 32282 terminated with exit status 1
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 32291 terminated with exit status 1
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 32294 terminated with exit status 1
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 32296 terminated with exit status 1
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 32295 terminated with exit status 1
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_ring.c:31
+Process 32289 terminated with exit status 1
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 32293 terminated with exit status 1
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 32292 terminated with exit status 1
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 32290 terminated with exit status 1
+test 8 end
+test 9 start
+running ./mpirun -np 6 _test/bin/test_matrix_multiply
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Process 32308 terminated with exit status 1
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Process 32307 terminated with exit status 1
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Process 32305 terminated with exit status 1
+Process 32306 terminated with exit status 1
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Process 32304 terminated with exit status 1
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:77
+Process 32303 terminated with exit status 1
+test 9 end
+end tests on Thu Apr 11 13:49:17 EEST 2013
+-----------------------------
+start tests on Thu Apr 11 13:52:18 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 32468 was killed by signal 9
+Process 32464 was killed by signal 9
+Process 32465 was killed by signal 9
+Process 32467 was killed by signal 9
+Process 32470 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 32479 terminated with exit status 0
+Process 32478 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 32487 terminated with exit status 0
+Process 32486 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 32494 terminated with exit status 0
+Process 32495 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+5
+Assertion fail_unless(ret == MPI_ERR_OTHER) failed at test_before_after.c:20
+5
+Assertion fail_unless(ret == MPI_ERR_OTHER) failed at test_before_after.c:20
+Process 32502 terminated with exit status 1
+Process 32503 terminated with exit status 1
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+Assertion fail_if(received != MAGIC) failed at test_send_recv.c:40
+Process 32511 terminated with exit status 1
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_send_recv.c:32
+Process 32510 terminated with exit status 1
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+Assertion fail_if(stat.MPI_TAG != TAG) failed at test_send_recv_array.c:45
+Process 32519 terminated with exit status 1
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_send_recv_array.c:36
+Process 32518 terminated with exit status 1
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 32529 terminated with exit status 1
+Process 32530 terminated with exit status 1
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 32532 terminated with exit status 1
+Process 32531 terminated with exit status 1
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 32528 terminated with exit status 1
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_ring.c:31
+Process 32526 terminated with exit status 1
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 32527 terminated with exit status 1
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 32533 terminated with exit status 1
+test 8 end
+test 9 start
+running ./mpirun -np 6 _test/bin/test_matrix_multiply
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:77
+Process 32540 terminated with exit status 1
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Process 32545 terminated with exit status 1
+Process 32542 terminated with exit status 1
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Process 32541 terminated with exit status 1
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Process 32544 terminated with exit status 1
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Process 32543 terminated with exit status 1
+test 9 end
+end tests on Thu Apr 11 13:52:19 EEST 2013
+-----------------------------
+start tests on Thu Apr 11 13:53:47 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 4 procs, expected 5
+Process 32614 was killed by signal 9
+Process 32611 was killed by signal 9
+Process 32613 was killed by signal 9
+Process 32616 was killed by signal 9
+Process 32617 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 32625 terminated with exit status 0
+Process 32626 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 32633 terminated with exit status 0
+Process 32634 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 32641 terminated with exit status 0
+Process 32642 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+5
+Assertion fail_unless(ret == MPI_ERR_OTHER) failed at test_before_after.c:20
+5
+Assertion fail_unless(ret == MPI_ERR_OTHER) failed at test_before_after.c:20
+Process 32649 terminated with exit status 1
+Process 32650 terminated with exit status 1
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_send_recv.c:32
+Assertion fail_if(received != MAGIC) failed at test_send_recv.c:40
+Process 32657 terminated with exit status 1
+Process 32658 terminated with exit status 1
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_send_recv_array.c:36
+Assertion fail_if(stat.MPI_TAG != TAG) failed at test_send_recv_array.c:45
+Process 32665 terminated with exit status 1
+Process 32666 terminated with exit status 1
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_ring.c:31
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 32673 terminated with exit status 1
+Process 32676 terminated with exit status 1
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 32680 terminated with exit status 1
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 32674 terminated with exit status 1
+Process 32675 terminated with exit status 1
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 32679 terminated with exit status 1
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 32677 terminated with exit status 1
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 32678 terminated with exit status 1
+test 8 end
+test 9 start
+running ./mpirun -np 6 _test/bin/test_matrix_multiply
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:77
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Process 32690 terminated with exit status 1
+Process 32689 terminated with exit status 1
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Process 32692 terminated with exit status 1
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Process 32687 terminated with exit status 1
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Process 32691 terminated with exit status 1
+Process 32688 terminated with exit status 1
+test 9 end
+end tests on Thu Apr 11 13:53:47 EEST 2013
+-----------------------------
+start tests on Thu Apr 11 13:53:50 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 32731 was killed by signal 9
+Process 32734 was killed by signal 9
+Process 32735 was killed by signal 9
+Process 32732 was killed by signal 9
+Process 32736 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 32746 terminated with exit status 0
+Process 32747 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 32755 terminated with exit status 0
+Process 32754 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 32763 terminated with exit status 0
+Process 32762 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+15
+15
+Process 302 terminated with exit status 0
+15
+15
+Process 303 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_send_recv.c:32
+Assertion fail_if(received != MAGIC) failed at test_send_recv.c:40
+Process 310 terminated with exit status 1
+Process 311 terminated with exit status 1
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_send_recv_array.c:36
+Assertion fail_if(stat.MPI_TAG != TAG) failed at test_send_recv_array.c:45
+Process 318 terminated with exit status 1
+Process 319 terminated with exit status 1
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_ring.c:31
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 329 terminated with exit status 1
+Process 330 terminated with exit status 1
+Process 336 terminated with exit status 1
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 332 terminated with exit status 1
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 335 terminated with exit status 1
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 334 terminated with exit status 1
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 331 terminated with exit status 1
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 333 terminated with exit status 1
+test 8 end
+test 9 start
+running ./mpirun -np 6 _test/bin/test_matrix_multiply
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Process 345 terminated with exit status 1
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Process 347 terminated with exit status 1
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:77
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Process 343 terminated with exit status 1
+Process 346 terminated with exit status 1
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Process 348 terminated with exit status 1
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:159
+Process 344 terminated with exit status 1
+test 9 end
+end tests on Thu Apr 11 13:53:50 EEST 2013
+-----------------------------
+start tests on Thu Apr 11 14:02:35 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 689 was killed by signal 9
+Process 691 was killed by signal 9
+Process 692 was killed by signal 9
+Process 693 was killed by signal 9
+Process 690 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 704 terminated with exit status 0
+Process 705 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 714 terminated with exit status 0
+Process 713 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 721 terminated with exit status 0
+Process 722 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+15
+15
+15
+15
+Process 730 terminated with exit status 0
+Process 731 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+Assertion fail_if(received != MAGIC) failed at test_send_recv.c:40
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_send_recv.c:32
+Process 739 terminated with exit status 1
+Process 738 terminated with exit status 1
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_send_recv_array.c:36
+Assertion fail_if(stat.MPI_TAG != TAG) failed at test_send_recv_array.c:45
+Process 746 terminated with exit status 1
+Process 747 terminated with exit status 1
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 757 terminated with exit status 1
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 761 terminated with exit status 1
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 759 terminated with exit status 1
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 755 terminated with exit status 1
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 758 terminated with exit status 1
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 756 terminated with exit status 1
+Process 760 terminated with exit status 1
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_ring.c:31
+Process 754 terminated with exit status 1
+test 8 end
+test 9 start
+running ./mpirun -np 6 _test/bin/test_matrix_multiply
+Assertion fail_unless(ret == MPI_SUCCESS) failed at test_matrix_multiply.c:77
+Process 769 terminated with exit status 1
+Process 774 was killed by signal 11
+Process 772 was killed by signal 11
+Process 771 was killed by signal 11
+Process 770 was killed by signal 11
+Process 773 was killed by signal 11
+test 9 end
+end tests on Thu Apr 11 14:02:35 EEST 2013
+-----------------------------
+start tests on Thu Apr 11 14:04:45 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 4 procs, expected 5
+Process 862 was killed by signal 9
+Process 863 was killed by signal 9
+Process 864 was killed by signal 9
+Process 866 was killed by signal 9
+Process 867 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 877 terminated with exit status 0
+Process 878 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 885 terminated with exit status 0
+Process 886 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 894 terminated with exit status 0
+Process 893 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+15
+15
+15
+15
+Process 901 terminated with exit status 0
+Process 902 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+Assertion fail_if(received != MAGIC) failed at test_send_recv.c:40
+Process 909 terminated with exit status 0
+Process 910 terminated with exit status 1
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+Assertion fail_if(stat.MPI_TAG != TAG) failed at test_send_recv_array.c:45
+Process 917 terminated with exit status 0
+Process 918 terminated with exit status 1
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+Assertion fail_unless(final == NUM_PROCS-1) failed at test_ring.c:37
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 928 terminated with exit status 1
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 930 terminated with exit status 1
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 931 terminated with exit status 1
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 932 terminated with exit status 1
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 929 terminated with exit status 1
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 926 terminated with exit status 1
+Process 933 terminated with exit status 1
+Process 925 terminated with exit status 1
+test 8 end
+test 9 start
+running ./mpirun -np 6 _test/bin/test_matrix_multiply
+Process 941 was killed by signal 11
+Process 942 was killed by signal 11
+Process 943 was killed by signal 11
+Process 945 was killed by signal 11
+Process 944 was killed by signal 11
+Process 946 was killed by signal 11
+test 9 end
+end tests on Thu Apr 11 14:04:46 EEST 2013
+-----------------------------
+start tests on Thu Apr 11 14:50:52 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 2210 was killed by signal 9
+Process 2215 was killed by signal 9
+Process 2211 was killed by signal 9
+Process 2216 was killed by signal 9
+Process 2213 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 2224 terminated with exit status 0
+Process 2225 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 2232 terminated with exit status 0
+Process 2233 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 2240 terminated with exit status 0
+Process 2241 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+15
+15
+15
+15
+Process 2248 terminated with exit status 0
+Process 2249 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+Assertion fail_if(received != MAGIC) failed at test_send_recv.c:40
+Process 2256 terminated with exit status 0
+Process 2257 terminated with exit status 1
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+Process 2264 terminated with exit status 0
+Assertion fail_if(stat.MPI_TAG != TAG) failed at test_send_recv_array.c:45
+Process 2265 terminated with exit status 1
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_unless(final == NUM_PROCS-1) failed at test_ring.c:37
+Process 2272 terminated with exit status 1
+Process 2273 terminated with exit status 1
+Process 2274 terminated with exit status 1
+Process 2275 terminated with exit status 1
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 2278 terminated with exit status 1
+Process 2277 terminated with exit status 1
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 2276 terminated with exit status 1
+Process 2279 terminated with exit status 1
+test 8 end
+test 9 start
+running ./mpirun -np 6 _test/bin/test_matrix_multiply
+Process 2286 was killed by signal 11
+Process 2290 was killed by signal 11
+Process 2291 was killed by signal 11
+Process 2289 was killed by signal 11
+Process 2287 was killed by signal 11
+Process 2288 was killed by signal 11
+test 9 end
+end tests on Thu Apr 11 14:50:53 EEST 2013
+-----------------------------
+start tests on Thu Apr 11 17:11:51 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 4187 was killed by signal 9
+Process 4189 was killed by signal 9
+Process 4192 was killed by signal 9
+Process 4190 was killed by signal 9
+Process 4188 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 4202 terminated with exit status 0
+Process 4203 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 4210 terminated with exit status 0
+Process 4211 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 4219 terminated with exit status 0
+Process 4218 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+15
+15
+15
+15
+Process 4227 terminated with exit status 0
+Process 4226 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+Process 4234 terminated with exit status 0
+Process 4235 was killed by signal 6
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+Process 4243 terminated with exit status 0
+Process 4244 was killed by signal 6
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+Process 4257 was killed by signal 6
+Process 4256 was killed by signal 6
+Process 4258 was killed by signal 6
+Process 4259 was killed by signal 6
+Process 4254 was killed by signal 6
+Process 4255 was killed by signal 6
+Process 4252 was killed by signal 6
+Process 4253 was killed by signal 6
+test 8 end
+test 9 start
+running ./mpirun -np 6 _test/bin/test_matrix_multiply
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+Process 4277 was killed by signal 6
+Process 4279 was killed by signal 6
+Process 4278 was killed by signal 6
+Process 4274 was killed by signal 6
+Process 4275 was killed by signal 6
+Process 4276 was killed by signal 6
+test 9 end
+end tests on Thu Apr 11 17:11:52 EEST 2013
+-----------------------------
+start tests on Thu Apr 11 17:31:01 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 4973 was killed by signal 9
+Process 4976 was killed by signal 9
+Process 4972 was killed by signal 9
+Process 4974 was killed by signal 9
+Process 4975 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 4987 terminated with exit status 0
+Process 4988 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 4996 terminated with exit status 0
+Process 4995 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 5004 terminated with exit status 0
+Process 5003 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+15
+15
+15
+Process 5011 terminated with exit status 0
+15
+Process 5012 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+Process 5019 terminated with exit status 0
+Process 5020 was killed by signal 6
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+Process 5028 terminated with exit status 0
+Process 5029 was killed by signal 6
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+Process 5043 was killed by signal 6
+Process 5039 was killed by signal 6
+Process 5038 was killed by signal 6
+Process 5040 was killed by signal 6
+Process 5041 was killed by signal 6
+Process 5042 was killed by signal 6
+Process 5044 was killed by signal 6
+Process 5037 was killed by signal 6
+test 8 end
+test 9 start
+running ./mpirun -np 6 _test/bin/test_matrix_multiply
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+Process 5060 was killed by signal 6
+Process 5061 was killed by signal 6
+Process 5064 was killed by signal 6
+Process 5063 was killed by signal 6
+Process 5062 was killed by signal 6
+Process 5059 was killed by signal 6
+test 9 end
+end tests on Thu Apr 11 17:31:02 EEST 2013
+-----------------------------
+start tests on Thu Apr 11 17:32:43 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 5180 was killed by signal 9
+Process 5176 was killed by signal 9
+Process 5179 was killed by signal 9
+Process 5177 was killed by signal 9
+Process 5178 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 5192 terminated with exit status 0
+Process 5191 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 5199 terminated with exit status 0
+Process 5200 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 5207 terminated with exit status 0
+Process 5208 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+15
+15
+15
+15
+Process 5215 terminated with exit status 0
+Process 5216 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+Process 5223 terminated with exit status 0
+Process 5224 was killed by signal 6
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+Process 5232 terminated with exit status 0
+Process 5233 was killed by signal 6
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+Process 5246 was killed by signal 6
+Process 5241 was killed by signal 6
+Process 5245 was killed by signal 6
+Process 5248 was killed by signal 6
+Process 5242 was killed by signal 6
+Process 5243 was killed by signal 6
+Process 5247 was killed by signal 6
+Process 5244 was killed by signal 6
+test 8 end
+test 9 start
+running ./mpirun -np 6 _test/bin/test_matrix_multiply
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+m9383: lib.cpp:137: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+Process 5265 was killed by signal 6
+Process 5268 was killed by signal 6
+Process 5267 was killed by signal 6
+Process 5263 was killed by signal 6
+Process 5266 was killed by signal 6
+Process 5264 was killed by signal 6
+test 9 end
+end tests on Thu Apr 11 17:32:43 EEST 2013
+-----------------------------
+start tests on Thu Apr 11 17:33:06 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 5337 was killed by signal 9
+Process 5340 was killed by signal 9
+Process 5339 was killed by signal 9
+Process 5338 was killed by signal 9
+Process 5341 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 5352 terminated with exit status 0
+Process 5353 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 5360 terminated with exit status 0
+Process 5361 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 5368 terminated with exit status 0
+Process 5369 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+15
+15
+15
+Process 5376 terminated with exit status 0
+15
+Process 5377 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+a fail-uit: Message too long
+m9383: lib.cpp:138: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+Process 5384 terminated with exit status 0
+Process 5385 was killed by signal 6
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+a fail-uit: Message too long
+Process 5393 terminated with exit status 0
+m9383: lib.cpp:138: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+Process 5394 was killed by signal 6
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+a fail-uit: Message too long
+m9383: lib.cpp:138: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+a fail-uit: Message too long
+m9383: lib.cpp:138: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+a fail-uit: Message too long
+m9383: lib.cpp:138: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+a fail-uit: Message too long
+m9383: lib.cpp:138: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+a fail-uit: Message too long
+m9383: lib.cpp:138: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+a fail-uit: Message too long
+m9383: lib.cpp:138: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+a fail-uit: Message too long
+m9383: lib.cpp:138: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+a fail-uit: Message too long
+m9383: lib.cpp:138: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+Process 5405 was killed by signal 6
+Process 5407 was killed by signal 6
+Process 5406 was killed by signal 6
+Process 5402 was killed by signal 6
+Process 5409 was killed by signal 6
+Process 5404 was killed by signal 6
+Process 5403 was killed by signal 6
+Process 5408 was killed by signal 6
+test 8 end
+test 9 start
+running ./mpirun -np 6 _test/bin/test_matrix_multiply
+a fail-uit: Message too long
+a fail-uit: Message too long
+m9383: lib.cpp:138: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+m9383: lib.cpp:138: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+a fail-uit: Message too long
+m9383: lib.cpp:138: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+a fail-uit: Message too long
+m9383: lib.cpp:138: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+a fail-uit: Message too long
+m9383: lib.cpp:138: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+a fail-uit: Message too long
+m9383: lib.cpp:138: int MPI_Recv(void*, int, MPI_Datatype, int, int, MPI_Comm, MPI_Status*): Assertion `rc != -1' failed.
+Process 5425 was killed by signal 6
+Process 5429 was killed by signal 6
+Process 5427 was killed by signal 6
+Process 5424 was killed by signal 6
+Process 5426 was killed by signal 6
+Process 5428 was killed by signal 6
+test 9 end
+end tests on Thu Apr 11 17:33:06 EEST 2013
+-----------------------------
+start tests on Thu Apr 11 17:42:45 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 5750 was killed by signal 9
+Process 5749 was killed by signal 9
+Process 5751 was killed by signal 9
+Process 5752 was killed by signal 9
+Process 5753 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 5763 terminated with exit status 0
+Process 5764 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 5771 terminated with exit status 0
+Process 5772 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 5779 terminated with exit status 0
+Process 5780 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+15
+15
+15
+Process 5787 terminated with exit status 0
+15
+Process 5788 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+Process 5795 terminated with exit status 0
+(lib.cpp, 149): Recieve failed: Message too long
+Process 5796 terminated with exit status 1
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+(lib.cpp, 149): Recieve failed: Message too long
+Process 5803 terminated with exit status 0
+Process 5804 terminated with exit status 1
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+(lib.cpp, 149): Recieve failed: Message too long
+(lib.cpp, 149): Recieve failed: Message too long
+(lib.cpp, 149): Recieve failed: Message too long
+Process 5811 terminated with exit status 1
+Process 5812 terminated with exit status 1
+Process 5815 terminated with exit status 1
+(lib.cpp, 149): Recieve failed: Message too long
+(lib.cpp, 149): Recieve failed: Message too long
+Process 5813 terminated with exit status 1
+Process 5814 terminated with exit status 1
+(lib.cpp, 149): Recieve failed: Message too long
+Process 5816 terminated with exit status 1
+(lib.cpp, 149): Recieve failed: Message too long
+(lib.cpp, 149): Recieve failed: Message too long
+Process 5818 terminated with exit status 1
+Process 5817 terminated with exit status 1
+test 8 end
+test 9 start
+running ./mpirun -np 6 _test/bin/test_matrix_multiply
+(lib.cpp, 149): Recieve failed: Message too long
+(lib.cpp, 149): Recieve failed: Message too long
+(lib.cpp, 149): Recieve failed: Message too long
+Process 5825 terminated with exit status 1
+Process 5828 terminated with exit status 1
+Process 5829 terminated with exit status 1
+(lib.cpp, 149): Recieve failed: Message too long
+Process 5826 terminated with exit status 1
+(lib.cpp, 149): Recieve failed: Message too long
+Process 5827 terminated with exit status 1
+(lib.cpp, 149): Recieve failed: Message too long
+Process 5830 terminated with exit status 1
+test 9 end
+end tests on Thu Apr 11 17:42:45 EEST 2013
+-----------------------------
+start tests on Thu Apr 11 17:44:05 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 5928 was killed by signal 9
+Process 5929 was killed by signal 9
+Process 5930 was killed by signal 9
+Process 5933 was killed by signal 9
+Process 5932 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 5943 terminated with exit status 0
+Process 5944 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 5951 terminated with exit status 0
+Process 5952 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 5959 terminated with exit status 0
+Process 5960 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+15
+15
+15
+15
+Process 5967 terminated with exit status 0
+Process 5968 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+(lib.cpp, 149): Recieve failed: Message too long
+Process 5975 terminated with exit status 0
+Process 5976 terminated with exit status 1
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+(lib.cpp, 149): Process 5983 terminated with exit status 0
+Recieve failed: Message too long
+Process 5984 terminated with exit status 1
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+(lib.cpp, 149): Recieve failed: Message too long
+Process 5991 terminated with exit status 1
+(lib.cpp, 149): Recieve failed: Message too long
+Process 5992 terminated with exit status 1
+(lib.cpp, 149): Recieve failed: Message too long
+(lib.cpp, 149): Recieve failed: Message too long
+Process 5998 terminated with exit status 1
+Process 5994 terminated with exit status 1
+(lib.cpp, 149): Recieve failed: Message too long
+Process 5997 terminated with exit status 1
+(lib.cpp, 149): Recieve failed: Message too long
+Process 5993 terminated with exit status 1
+(lib.cpp, 149): Recieve failed: Message too long
+Process 5996 terminated with exit status 1
+(lib.cpp, 149): Recieve failed: Message too long
+Process 5995 terminated with exit status 1
+test 8 end
+test 9 start
+running ./mpirun -np 6 _test/bin/test_matrix_multiply
+(lib.cpp, 149): Recieve failed: Message too long
+(lib.cpp, 149): Recieve failed: Message too long
+(lib.cpp, 149): Recieve failed: Message too long
+(lib.cpp, 149): Recieve failed: Message too long
+Process 6005 terminated with exit status 1
+Process 6006 terminated with exit status 1
+Process 6008 terminated with exit status 1
+Process 6007 terminated with exit status 1
+(lib.cpp, 149): Recieve failed: Message too long
+Process 6010 terminated with exit status 1
+(lib.cpp, 149): Recieve failed: Message too long
+Process 6009 terminated with exit status 1
+test 9 end
+end tests on Thu Apr 11 17:44:06 EEST 2013
+-----------------------------
+start tests on Thu Apr 11 17:44:17 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 6040 was killed by signal 9
+Process 6045 was killed by signal 9
+Process 6044 was killed by signal 9
+Process 6041 was killed by signal 9
+Process 6043 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 6056 terminated with exit status 0
+Process 6055 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 6063 terminated with exit status 0
+Process 6064 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 6071 terminated with exit status 0
+Process 6072 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+15
+15
+15
+Process 6079 terminated with exit status 0
+15
+Process 6080 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+Process 6087 terminated with exit status 0
+(lib.cpp, 149): Recieve failed: Message too long
+Process 6088 terminated with exit status 1
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+(lib.cpp, 149): Recieve failed: Message too long
+Process 6095 terminated with exit status 0
+Process 6096 terminated with exit status 1
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+(lib.cpp, 149): (lib.cpp, 149): (lib.cpp, 149): Recieve failed: Message too long
+Recieve failed: Message too long
+Process 6103 terminated with exit status 1
+Process 6108 terminated with exit status 1
+(lib.cpp, 149): Recieve failed: Message too long
+Process 6104 terminated with exit status 1
+(lib.cpp, 149): Recieve failed: Message too long
+(lib.cpp, 149): Process 6106 terminated with exit status 1
+Recieve failed: Message too long
+Process 6110 terminated with exit status 1
+(lib.cpp, 149): Recieve failed: Message too long
+Process 6109 terminated with exit status 1
+(lib.cpp, 149): Recieve failed: Message too long
+Process 6105 terminated with exit status 1
+Recieve failed: Message too long
+Process 6107 terminated with exit status 1
+test 8 end
+test 9 start
+running ./mpirun -np 6 _test/bin/test_matrix_multiply
+(lib.cpp, 149): (lib.cpp, 149): Recieve failed: Message too long
+Process 6118 terminated with exit status 1
+(lib.cpp, 149): (lib.cpp, 149): Recieve failed: Message too long
+Recieve failed: Message too long
+Process 6117 terminated with exit status 1
+Process 6121 terminated with exit status 1
+(lib.cpp, 149): Recieve failed: Message too long
+Recieve failed: Message too long
+Process 6122 terminated with exit status 1
+Process 6119 terminated with exit status 1
+(lib.cpp, 149): Recieve failed: Message too long
+Process 6120 terminated with exit status 1
+test 9 end
+end tests on Thu Apr 11 17:44:17 EEST 2013
+-----------------------------
+start tests on Thu Apr 11 17:52:53 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 6477 was killed by signal 9
+Process 6475 was killed by signal 9
+Process 6474 was killed by signal 9
+Process 6476 was killed by signal 9
+Process 6473 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 6488 terminated with exit status 0
+Process 6489 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 6496 terminated with exit status 0
+Process 6497 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 6504 terminated with exit status 0
+Process 6505 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+15
+15
+15
+Process 6512 terminated with exit status 0
+15
+Process 6513 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+(lib.cpp, 133): Recieve failed: Message too long
+Process 6520 terminated with exit status 0
+Process 6521 terminated with exit status 1
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+Process 6528 terminated with exit status 0
+(lib.cpp, 133): Recieve failed: Message too long
+Process 6529 terminated with exit status 1
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+(lib.cpp, 133): Recieve failed: Message too long
+Process 6536 terminated with exit status 1
+(lib.cpp, 133): (lib.cpp, 133): Recieve failed: Message too long
+Recieve failed: Message too long
+Process 6541 terminated with exit status 1
+Process 6542 terminated with exit status 1
+(lib.cpp, 133): Recieve failed: Message too long
+Process 6537 terminated with exit status 1
+(lib.cpp, 133): Recieve failed: Message too long
+(lib.cpp, 133): Recieve failed: Message too long
+Process 6538 terminated with exit status 1
+Process 6539 terminated with exit status 1
+(lib.cpp, 133): Recieve failed: Message too long
+Process 6543 terminated with exit status 1
+(lib.cpp, 133): Recieve failed: Message too long
+Process 6540 terminated with exit status 1
+test 8 end
+test 9 start
+running ./mpirun -np 6 _test/bin/test_matrix_multiply
+(lib.cpp, 133): (lib.cpp, 133): Recieve failed: Message too long
+Recieve failed: Message too long
+(lib.cpp, 133): Recieve failed: Message too long
+Process 6550 terminated with exit status 1
+Process 6552 terminated with exit status 1
+Process 6554 terminated with exit status 1
+(lib.cpp, 133): Recieve failed: Message too long
+(lib.cpp, 133): Recieve failed: Message too long
+Process 6553 terminated with exit status 1
+Process 6551 terminated with exit status 1
+(lib.cpp, 133): Recieve failed: Message too long
+Process 6555 terminated with exit status 1
+test 9 end
+end tests on Thu Apr 11 17:52:53 EEST 2013
+-----------------------------
+start tests on Thu Apr 11 17:54:18 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+mpirun: mpirun.c:34: int main(int, char**): Assertion `mq[i] != (mqd_t)-1' failed.
+created 0 procs, expected 5
+./_test/run_test.sh: line 70:  6630 Aborted                 (core dumped) $cmd >> $tmpfile
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+mpirun: mpirun.c:34: int main(int, char**): Assertion `mq[i] != (mqd_t)-1' failed.
+./_test/run_test.sh: line 98:  6642 Aborted                 (core dumped) $cmd >> $tmpfile
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+mpirun: mpirun.c:34: int main(int, char**): Assertion `mq[i] != (mqd_t)-1' failed.
+./_test/run_test.sh: line 98:  6649 Aborted                 (core dumped) $cmd >> $tmpfile
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+mpirun: mpirun.c:34: int main(int, char**): Assertion `mq[i] != (mqd_t)-1' failed.
+./_test/run_test.sh: line 98:  6656 Aborted                 (core dumped) $cmd >> $tmpfile
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+mpirun: mpirun.c:34: int main(int, char**): Assertion `mq[i] != (mqd_t)-1' failed.
+./_test/run_test.sh: line 98:  6663 Aborted                 (core dumped) $cmd >> $tmpfile
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+mpirun: mpirun.c:34: int main(int, char**): Assertion `mq[i] != (mqd_t)-1' failed.
+./_test/run_test.sh: line 98:  6670 Aborted                 (core dumped) $cmd >> $tmpfile
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+mpirun: mpirun.c:34: int main(int, char**): Assertion `mq[i] != (mqd_t)-1' failed.
+./_test/run_test.sh: line 98:  6677 Aborted                 (core dumped) $cmd >> $tmpfile
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+mpirun: mpirun.c:34: int main(int, char**): Assertion `mq[i] != (mqd_t)-1' failed.
+./_test/run_test.sh: line 98:  6684 Aborted                 (core dumped) $cmd >> $tmpfile
+test 8 end
+test 9 start
+running ./mpirun -np 6 _test/bin/test_matrix_multiply
+mpirun: mpirun.c:34: int main(int, char**): Assertion `mq[i] != (mqd_t)-1' failed.
+./_test/run_test.sh: line 98:  6691 Aborted                 (core dumped) $cmd >> $tmpfile
+test 9 end
+end tests on Thu Apr 11 17:54:19 EEST 2013
+-----------------------------
+start tests on Thu Apr 11 17:54:22 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+mpirun: mpirun.c:34: int main(int, char**): Assertion `mq[i] != (mqd_t)-1' failed.
+created 0 procs, expected 5
+./_test/run_test.sh: line 70:  6725 Aborted                 (core dumped) $cmd >> $tmpfile
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+mpirun: mpirun.c:34: int main(int, char**): Assertion `mq[i] != (mqd_t)-1' failed.
+./_test/run_test.sh: line 98:  6737 Aborted                 (core dumped) $cmd >> $tmpfile
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+mpirun: mpirun.c:34: int main(int, char**): Assertion `mq[i] != (mqd_t)-1' failed.
+./_test/run_test.sh: line 98:  6744 Aborted                 (core dumped) $cmd >> $tmpfile
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+mpirun: mpirun.c:34: int main(int, char**): Assertion `mq[i] != (mqd_t)-1' failed.
+./_test/run_test.sh: line 98:  6751 Aborted                 (core dumped) $cmd >> $tmpfile
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+mpirun: mpirun.c:34: int main(int, char**): Assertion `mq[i] != (mqd_t)-1' failed.
+./_test/run_test.sh: line 98:  6758 Aborted                 (core dumped) $cmd >> $tmpfile
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+mpirun: mpirun.c:34: int main(int, char**): Assertion `mq[i] != (mqd_t)-1' failed.
+./_test/run_test.sh: line 98:  6765 Aborted                 (core dumped) $cmd >> $tmpfile
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+mpirun: mpirun.c:34: int main(int, char**): Assertion `mq[i] != (mqd_t)-1' failed.
+./_test/run_test.sh: line 98:  6772 Aborted                 (core dumped) $cmd >> $tmpfile
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+mpirun: mpirun.c:34: int main(int, char**): Assertion `mq[i] != (mqd_t)-1' failed.
+./_test/run_test.sh: line 98:  6779 Aborted                 (core dumped) $cmd >> $tmpfile
+test 8 end
+test 9 start
+running ./mpirun -np 6 _test/bin/test_matrix_multiply
+mpirun: mpirun.c:34: int main(int, char**): Assertion `mq[i] != (mqd_t)-1' failed.
+./_test/run_test.sh: line 98:  6786 Aborted                 (core dumped) $cmd >> $tmpfile
+test 9 end
+end tests on Thu Apr 11 17:54:23 EEST 2013
+-----------------------------
+start tests on Thu Apr 11 17:59:25 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+(mpirun.c, 34): Can't open queue: Invalid argument
+created 0 procs, expected 5
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+(mpirun.c, 34): Can't open queue: Invalid argument
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+(mpirun.c, 34): Can't open queue: Invalid argument
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+(mpirun.c, 34): Can't open queue: Invalid argument
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+(mpirun.c, 34): Can't open queue: Invalid argument
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+(mpirun.c, 34): Can't open queue: Invalid argument
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+(mpirun.c, 34): Can't open queue: Invalid argument
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+(mpirun.c, 34): Can't open queue: Invalid argument
+test 8 end
+test 9 start
+running ./mpirun -np 6 _test/bin/test_matrix_multiply
+(mpirun.c, 34): Can't open queue: Invalid argument
+test 9 end
+end tests on Thu Apr 11 17:59:25 EEST 2013
+-----------------------------
+start tests on Thu Apr 11 18:00:46 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 7034 was killed by signal 9
+Process 7031 was killed by signal 9
+Process 7032 was killed by signal 9
+Process 7036 was killed by signal 9
+Process 7035 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 7044 terminated with exit status 0
+Process 7045 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 7052 terminated with exit status 0
+Process 7053 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 7060 terminated with exit status 0
+Process 7061 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+15
+15
+15
+15
+Process 7069 terminated with exit status 0
+Process 7068 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+(lib.cpp, 133): Recieve failed: Message too long
+Process 7076 terminated with exit status 0
+Process 7077 terminated with exit status 1
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+(lib.cpp, 133): Recieve failed: Message too long
+Process 7084 terminated with exit status 0
+Process 7085 terminated with exit status 1
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+(lib.cpp, 133): Recieve failed: Message too long
+Process 7094 terminated with exit status 1
+(lib.cpp, 133): Recieve failed: Message too long
+(lib.cpp, 133): Recieve failed: Message too long
+Process 7097 terminated with exit status 1
+Process 7095 terminated with exit status 1
+(lib.cpp, 133): Recieve failed: Message too long
+(lib.cpp, 133): Process 7093 terminated with exit status 1
+Recieve failed: Message too long
+Process 7092 terminated with exit status 1
+(lib.cpp, 133): Recieve failed: Message too long
+(lib.cpp, 133): Recieve failed: Message too long
+Process 7099 terminated with exit status 1
+Process 7096 terminated with exit status 1
+(lib.cpp, 133): Recieve failed: Message too long
+Process 7098 terminated with exit status 1
+test 8 end
+test 9 start
+running ./mpirun -np 6 _test/bin/test_matrix_multiply
+(lib.cpp, 133): Recieve failed: Message too long
+(lib.cpp, 133): Recieve failed: Message too long
+Process 7109 terminated with exit status 1
+Process 7108 terminated with exit status 1
+(lib.cpp, 133): Recieve failed: Message too long
+Process 7110 terminated with exit status 1
+(lib.cpp, 133): Recieve failed: Message too long
+Process 7107 terminated with exit status 1
+(lib.cpp, 133): Recieve failed: Message too long
+Process 7111 terminated with exit status 1
+(lib.cpp, 133): Recieve failed: Message too long
+Process 7106 terminated with exit status 1
+test 9 end
+end tests on Thu Apr 11 18:00:47 EEST 2013
+-----------------------------
+start tests on Thu Apr 11 18:03:19 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 7165 was killed by signal 9
+Process 7166 was killed by signal 9
+Process 7168 was killed by signal 9
+Process 7167 was killed by signal 9
+Process 7169 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 7180 terminated with exit status 0
+Process 7181 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 7188 terminated with exit status 0
+Process 7189 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 7197 terminated with exit status 0
+Process 7196 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+15
+15
+Process 7204 terminated with exit status 0
+15
+15
+Process 7205 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+Assertion fail_if(received != MAGIC) failed at test_send_recv.c:40
+Process 7212 terminated with exit status 0
+Process 7213 terminated with exit status 1
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+Assertion fail_if(v[i] != i * 3 + 5) failed at test_send_recv_array.c:52
+Process 7220 terminated with exit status 0
+Process 7221 terminated with exit status 1
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 7229 terminated with exit status 0
+Process 7230 terminated with exit status 1
+-----------------------------
+start tests on Thu Apr 11 18:07:10 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 3 procs, expected 5
+Process 7334 was killed by signal 9
+Process 7332 was killed by signal 9
+Process 7336 was killed by signal 9
+Process 7337 was killed by signal 9
+Process 7331 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 7345 terminated with exit status 0
+Process 7346 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 7353 terminated with exit status 0
+Process 7354 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 7361 terminated with exit status 0
+Process 7362 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+15
+15
+15
+15
+Process 7369 terminated with exit status 0
+Process 7370 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+Assertion fail_if(received != MAGIC) failed at test_send_recv.c:40
+Process 7377 terminated with exit status 0
+Process 7378 terminated with exit status 1
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+Assertion fail_if(v[i] != i * 3 + 5) failed at test_send_recv_array.c:52
+Process 7385 terminated with exit status 0
+Process 7386 terminated with exit status 1
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 7394 terminated with exit status 0
+Process 7395 terminated with exit status 1
+./_test/run_test.sh: line 98:  7392 Quit                    (core dumped) $cmd >> $tmpfile
+end tests on Thu Apr 11 18:07:18 EEST 2013
+-----------------------------
+start tests on Thu Apr 11 18:07:27 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 7452 was killed by signal 9
+Process 7455 was killed by signal 9
+Process 7456 was killed by signal 9
+Process 7457 was killed by signal 9
+Process 7453 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 7468 terminated with exit status 0
+Process 7467 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 7475 terminated with exit status 0
+Process 7476 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 7483 terminated with exit status 0
+Process 7484 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+15
+15
+Process 7491 terminated with exit status 0
+15
+15
+Process 7492 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+Process 7499 terminated with exit status 0
+Assertion fail_if(received != MAGIC) failed at test_send_recv.c:40
+Process 7500 terminated with exit status 1
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+Assertion fail_if(v[i] != i * 3 + 5) failed at test_send_recv_array.c:52
+Process 7507 terminated with exit status 0
+Process 7508 terminated with exit status 1
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 7516 terminated with exit status 0
+Process 7517 terminated with exit status 1
+-----------------------------
+start tests on Thu Apr 11 18:08:12 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 7572 was killed by signal 9
+Process 7571 was killed by signal 9
+Process 7574 was killed by signal 9
+Process 7573 was killed by signal 9
+Process 7569 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 7585 terminated with exit status 0
+Process 7584 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 7592 terminated with exit status 0
+Process 7593 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 7600 terminated with exit status 0
+Process 7601 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+15
+15
+Process 7609 terminated with exit status 0
+15
+15
+Process 7608 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+Process 7616 terminated with exit status 0
+Process 7617 terminated with exit status 0
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+Process 7624 terminated with exit status 0
+Process 7625 terminated with exit status 0
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 7633 terminated with exit status 0
+Process 7634 terminated with exit status 1
+-----------------------------
+start tests on Thu Apr 11 18:09:42 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 7730 was killed by signal 9
+Process 7729 was killed by signal 9
+Process 7731 was killed by signal 9
+Process 7732 was killed by signal 9
+Process 7733 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 7745 terminated with exit status 0
+Process 7744 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 7752 terminated with exit status 0
+Process 7753 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 7761 terminated with exit status 0
+Process 7760 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+15
+15
+15
+15
+Process 7768 terminated with exit status 0
+Process 7769 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+Process 7776 terminated with exit status 0
+Process 7777 terminated with exit status 0
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+Process 7784 terminated with exit status 0
+Process 7785 terminated with exit status 0
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 7793 terminated with exit status 0
+Process 7794 terminated with exit status 1
+-----------------------------
+start tests on Thu Apr 11 18:09:59 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 3 procs, expected 5
+Process 7855 was killed by signal 9
+Process 7856 was killed by signal 9
+Process 7857 was killed by signal 9
+Process 7859 was killed by signal 9
+Process 7858 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 7870 terminated with exit status 0
+Process 7871 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 7879 terminated with exit status 0
+Process 7878 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 7886 terminated with exit status 0
+Process 7887 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+15
+15
+15
+15
+Process 7895 terminated with exit status 0
+Process 7894 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+Process 7902 terminated with exit status 0
+Process 7903 terminated with exit status 0
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+Process 7910 terminated with exit status 0
+Process 7911 terminated with exit status 0
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+Process 7919 terminated with exit status 0
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 7920 terminated with exit status 1
+-----------------------------
+start tests on Thu Apr 11 18:13:32 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 7967 was killed by signal 9
+Process 7966 was killed by signal 9
+Process 7968 was killed by signal 9
+Process 7969 was killed by signal 9
+Process 7970 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 7982 terminated with exit status 0
+Process 7983 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 7990 terminated with exit status 0
+Process 7991 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 7999 terminated with exit status 0
+Process 7998 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+15
+15
+15
+Process 8007 terminated with exit status 0
+15
+Process 8006 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+Process 8014 terminated with exit status 0
+Process 8015 terminated with exit status 0
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+Process 8022 terminated with exit status 0
+Process 8023 terminated with exit status 0
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+rank 1
+Process 8031 terminated with exit status 0
+rank 1
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 8032 terminated with exit status 1
+-----------------------------
+start tests on Thu Apr 11 18:14:55 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 8068 was killed by signal 9
+Process 8067 was killed by signal 9
+Process 8069 was killed by signal 9
+Process 8071 was killed by signal 9
+Process 8072 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 8082 terminated with exit status 0
+Process 8083 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 8090 terminated with exit status 0
+Process 8091 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 8098 terminated with exit status 0
+Process 8099 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+15
+15
+15
+Process 8107 terminated with exit status 0
+15
+Process 8106 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+Process 8114 terminated with exit status 0
+Process 8115 terminated with exit status 0
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+Process 8122 terminated with exit status 0
+Process 8123 terminated with exit status 0
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+rank 1 recieved from 0
+rank 1 recieved from 1
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 8132 terminated with exit status 1
+Process 8131 terminated with exit status 0
+-----------------------------
+start tests on Thu Apr 11 18:18:53 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 8172 was killed by signal 9
+Process 8175 was killed by signal 9
+Process 8176 was killed by signal 9
+Process 8173 was killed by signal 9
+Process 8174 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 8187 terminated with exit status 0
+Process 8188 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 8195 terminated with exit status 0
+Process 8196 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 8203 terminated with exit status 0
+Process 8204 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+15
+15
+Process 8211 terminated with exit status 0
+15
+15
+Process 8212 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+Process 8219 terminated with exit status 0
+Process 8220 terminated with exit status 0
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+Process 8227 terminated with exit status 0
+Process 8228 terminated with exit status 0
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+rank 1 recieved from 0 NUMPROCS 8  SIZE 8
+Process 8236 terminated with exit status 0
+rank 1 recieved from 1 NUMPROCS 8  SIZE 8
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 8237 terminated with exit status 1
+-----------------------------
+start tests on Thu Apr 11 18:20:24 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 8281 was killed by signal 9
+Process 8276 was killed by signal 9
+Process 8279 was killed by signal 9
+Process 8277 was killed by signal 9
+Process 8278 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 8291 terminated with exit status 0
+Process 8292 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 8299 terminated with exit status 0
+Process 8300 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 8308 terminated with exit status 0
+Process 8309 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+15
+15
+15
+15
+Process 8316 terminated with exit status 0
+Process 8317 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+sending message from 0 to 1
+Process 8324 terminated with exit status 0
+Process 8325 terminated with exit status 0
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+sending message from 0 to 1
+Process 8332 terminated with exit status 0
+Process 8333 terminated with exit status 0
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+sending message from 0 to 1
+rank 1 recieved from 0 NUMPROCS 8  SIZE 8
+sending message from 1 to 2
+Process 8341 terminated with exit status 0
+rank 1 recieved from 1 NUMPROCS 8  SIZE 8
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 8342 terminated with exit status 1
+-----------------------------
+start tests on Thu Apr 11 18:21:36 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 8379 was killed by signal 9
+Process 8374 was killed by signal 9
+Process 8382 was killed by signal 9
+Process 8383 was killed by signal 9
+Process 8385 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 8395 terminated with exit status 0
+Process 8396 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 8418 terminated with exit status 0
+Process 8419 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 8427 terminated with exit status 0
+Process 8426 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+15
+15
+15
+15
+Process 8434 terminated with exit status 0
+Process 8435 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+sending message from 0 to 1
+Process 8442 terminated with exit status 0
+Process 8443 terminated with exit status 0
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+sending message from 0 to 1
+Process 8450 terminated with exit status 0
+Process 8451 terminated with exit status 0
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+sending message from 0 to 1
+rank 1 recieved from 0 NUMPROCS 8  SIZE 8
+sending message from 1 to 2
+Process 8459 terminated with exit status 0
+rank 1 recieved from 1 NUMPROCS 8  SIZE 8
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 8460 terminated with exit status 1
+-----------------------------
+start tests on Thu Apr 11 18:27:20 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 8567 was killed by signal 9
+Process 8568 was killed by signal 9
+Process 8569 was killed by signal 9
+Process 8571 was killed by signal 9
+Process 8570 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 8582 terminated with exit status 0
+Process 8583 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 8591 terminated with exit status 0
+Process 8590 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 8598 terminated with exit status 0
+Process 8599 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+15
+15
+Process 8606 terminated with exit status 0
+15
+15
+Process 8607 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+3 4 
+sending message from 0 to 1
+Process 8614 terminated with exit status 0
+Process 8615 terminated with exit status 0
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+3 4 
+sending message from 0 to 1
+Process 8622 terminated with exit status 0
+Process 8623 terminated with exit status 0
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+3 4 5 6 7 8 9 10 
+sending message from 0 to 1
+rank 1 recieved from 0 NUMPROCS 8  SIZE 8
+3 4 5 6 7 8 9 10 
+sending message from 1 to 2
+rank 1 recieved from 1 NUMPROCS 8  SIZE 8
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 8631 terminated with exit status 0
+Process 8632 terminated with exit status 1
+-----------------------------
+start tests on Thu Apr 11 18:29:57 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 8676 was killed by signal 9
+Process 8672 was killed by signal 9
+Process 8673 was killed by signal 9
+Process 8671 was killed by signal 9
+Process 8674 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 8686 terminated with exit status 0
+Process 8687 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 8694 terminated with exit status 0
+Process 8695 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 8703 terminated with exit status 0
+Process 8702 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+15
+15
+15
+15
+Process 8710 terminated with exit status 0
+Process 8711 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+3 4 
+sending message from 0 to 1
+Process 8718 terminated with exit status 0
+Process 8719 terminated with exit status 0
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+3 4 
+sending message from 0 to 1
+Process 8726 terminated with exit status 0
+Process 8727 terminated with exit status 0
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+Hellow from 4
+Hellow from 0
+3 4 5 6 7 8 9 10 
+sending message from 0 to 1
+Hellow from 2
+Hellow from 3
+Hellow from 1
+rank 1 recieved from 0 NUMPROCS 8  SIZE 8
+3 4 5 6 7 8 9 10 
+sending message from 1 to 2
+rank 1 recieved from 1 NUMPROCS 8  SIZE 8
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 8736 terminated with exit status 1
+Hellow from 6
+Process 8735 terminated with exit status 0
+Hellow from 7
+Hellow from 5
+-----------------------------
+start tests on Thu Apr 11 18:35:32 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 8858 was killed by signal 9
+Process 8857 was killed by signal 9
+Process 8861 was killed by signal 9
+Process 8859 was killed by signal 9
+Process 8860 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 8873 terminated with exit status 0
+Process 8872 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 8881 terminated with exit status 0
+Process 8880 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 8888 terminated with exit status 0
+Process 8889 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+15
+15
+15
+15
+Process 8896 terminated with exit status 0
+Process 8897 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+3 4 
+sending message from 0 to 1
+Recieved on 1 from 0Process 8904 terminated with exit status 0
+Process 8905 terminated with exit status 0
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+3 4 
+sending message from 0 to 1
+Recieved on 1 from 0Process 8912 terminated with exit status 0
+Process 8913 terminated with exit status 0
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+Hellow from 7
+Hellow from 0
+3 4 5 6 7 8 9 10 
+sending message from 0 to 1
+Hellow from 1
+Recieved on 1 from 0rank 1 recieved from 0 NUMPROCS 8  SIZE 8
+3 4 5 6 7 8 9 10 
+sending message from 1 to 2
+Process 8921 terminated with exit status 0
+Hellow from 6
+Hellow from 4
+Hellow from 3
+Hellow from 5
+Hellow from 2
+Recieved on 2 from 1rank 1 recieved from 1 NUMPROCS 8  SIZE 8
+Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:43
+Process 8922 terminated with exit status 1
+-----------------------------
+start tests on Thu Apr 11 18:41:33 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 4 procs, expected 5
+Process 8988 was killed by signal 9
+Process 8992 was killed by signal 9
+Process 8993 was killed by signal 9
+Process 8994 was killed by signal 9
+Process 8990 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 9003 terminated with exit status 0
+Process 9002 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 9010 terminated with exit status 0
+Process 9011 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 9018 terminated with exit status 0
+Process 9019 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+15
+15
+Process 9026 terminated with exit status 0
+15
+15
+Process 9027 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+3 4 
+sending message from 0 to 1
+Process 9034 terminated with exit status 0
+Recieved on 1 from 0Process 9035 terminated with exit status 0
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+3 4 
+sending message from 0 to 1
+Process 9042 terminated with exit status 0
+Recieved on 1 from 0Process 9043 terminated with exit status 0
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+_test/bin/test_ring: 1: _test/bin/test_ring: Syntax error: word unexpected (expecting ")")
+_test/bin/test_ring: 1: _test/bin/test_ring: Syntax error: word unexpected (expecting ")")
+Process 9050 terminated with exit status 2
+Process 9053 terminated with exit status 2
+_test/bin/test_ring: 1: _test/bin/test_ring: _test/bin/test_ring: 1: _test/bin/test_ring: _test/bin/test_ring: 1: _test/bin/test_ring: Syntax error: word unexpected (expecting ")")Syntax error: word unexpected (expecting ")")
+Syntax error: word unexpected (expecting ")")
+
+Process 9052 terminated with exit status 2
+_test/bin/test_ring: 1: _test/bin/test_ring: Syntax error: word unexpected (expecting ")")
+_test/bin/test_ring: 1: _test/bin/test_ring: Syntax error: word unexpected (expecting ")")
+_test/bin/test_ring: 1: _test/bin/test_ring: Process 9056 terminated with exit status 2
+Syntax error: word unexpected (expecting ")")
+Process 9051 terminated with exit status 2
+Process 9055 terminated with exit status 2
+Process 9054 terminated with exit status 2
+Process 9057 terminated with exit status 2
+test 8 end
+test 9 start
+running ./mpirun -np 6 _test/bin/test_matrix_multiply
+3 4 5 6 7 8 
+sending message from 0 to 1
+3 4 5 6 7 8 
+sending message from 0 to 2
+3 4 5 6 7 8 
+sending message from 0 to 3
+3 4 5 6 7 8 
+sending message from 0 to 4
+3 4 5 6 7 8 
+sending message from 0 to 5
+3 4 5 6 7 8 
+sending message from 0 to 1
+3 4 5 6 Recieved on 5 from 07 8 
+sending message from 0 to 2
+3 4 Recieved on 1 from 05 6 7 Recieved on 1 from 08 
+3 sending message from 0 to 3
+4 5 3 6 4 7 5 8 6 7 
+8 sending message from 1 to 0
+
+sending message from 0 to 4
+3 4 5 6 7 8 
+sending message from 0 to 5
+Recieved on 0 from 1Recieved on 4 from 0Recieved on 4 from 03 4 5 6 7 8 
+sending message from 4 to 0
+Recieved on 0 from 4Process 9065 terminated with exit status 0
+Recieved on 5 from 03 4 5 6 7 8 
+sending message from 5 to 0
+Recieved on 0 from 5Recieved on 2 from 0Process 9068 terminated with exit status 0
+Process 9069 terminated with exit status 0
+Recieved on 2 from 03 4 5 6 7 8 
+sending message from 2 to 0
+Recieved on 0 from 2Process 9066 terminated with exit status 0
+Recieved on 3 from 0Recieved on 3 from 03 4 5 6 7 8 
+sending message from 3 to 0
+Recieved on 0 from 3Process 9067 terminated with exit status 0
+Process 9064 terminated with exit status 0
+test 9 end
+end tests on Thu Apr 11 18:41:33 EEST 2013
+-----------------------------
+start tests on Thu Apr 11 18:41:57 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 9095 was killed by signal 9
+Process 9097 was killed by signal 9
+Process 9094 was killed by signal 9
+Process 9099 was killed by signal 9
+Process 9096 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 9110 terminated with exit status 0
+Process 9109 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 9117 terminated with exit status 0
+Process 9118 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 9126 terminated with exit status 0
+Process 9125 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+15
+15
+15
+15
+Process 9133 terminated with exit status 0
+Process 9134 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+3 4 
+sending message from 0 to 1
+Recieved on 1 from 0Process 9141 terminated with exit status 0
+Process 9142 terminated with exit status 0
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+3 4 
+sending message from 0 to 1
+Recieved on 1 from 0Process 9149 terminated with exit status 0
+Process 9150 terminated with exit status 0
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+_test/bin/test_ring: 1: _test/bin/test_ring: Syntax error: word unexpected (expecting ")")
+Process 9164 terminated with exit status 2
+_test/bin/test_ring: 1: _test/bin/test_ring: Syntax error: word unexpected (expecting ")")
+_test/bin/test_ring: 1: _test/bin/test_ring: Process 9161 terminated with exit status 2
+_test/bin/test_ring: 1: _test/bin/test_ring: Syntax error: word unexpected (expecting ")")
+Process 9157 terminated with exit status 2
+Syntax error: word unexpected (expecting ")")
+Process 9159 terminated with exit status 2
+_test/bin/test_ring: 1: _test/bin/test_ring: Syntax error: word unexpected (expecting ")")
+Process 9158 terminated with exit status 2
+_test/bin/test_ring: 1: _test/bin/test_ring: Syntax error: word unexpected (expecting ")")
+Process 9160 terminated with exit status 2
+_test/bin/test_ring: 1: _test/bin/test_ring: Syntax error: word unexpected (expecting ")")
+Process 9162 terminated with exit status 2
+_test/bin/test_ring: 1: _test/bin/test_ring: Syntax error: word unexpected (expecting ")")
+Process 9163 terminated with exit status 2
+test 8 end
+test 9 start
+running ./mpirun -np 6 _test/bin/test_matrix_multiply
+3 4 5 6 7 8 
+sending message from 0 to 1
+3 4 5 6 7 8 
+sending message from 0 to 2
+3 4 5 6 7 8 
+sending message from 0 to 3
+3 4 5 6 7 8 Recieved on 3 from 0
+sending message from 0 to 4
+3 4 5 6 7 8 
+sending message from 0 to 5
+3 4 5 6 7 8 
+sending message from 0 to 1
+3 4 5 6 7 8 
+sending message from 0 to 2
+3 4 5 6 7 8 
+sending message from 0 to 3
+Recieved on 2 from 03 Recieved on 2 from 04 3 Recieved on 3 from 04 5 5 6 3 6 7 7 4 8 5 8 6 
+
+7 sending message from 2 to 0
+8 sending message from 0 to 4
+
+sending message from 3 to 0
+3 4 5 6 7 8 
+sending message from 0 to 5
+Recieved on 0 from 2Recieved on 0 from 3Recieved on 5 from 0Recieved on 5 from 03 4 5 6 7 8 
+sending message from 5 to 0
+Recieved on 0 from 5Process 9173 terminated with exit status 0
+Process 9174 terminated with exit status 0
+Process 9176 terminated with exit status 0
+Recieved on 4 from 0Recieved on 4 from 03 4 5 6 7 8 
+sending message from 4 to 0
+Recieved on 1 from 0Recieved on 0 from 4Recieved on 1 from 03 4 5 6 7 8 
+sending message from 1 to 0
+Recieved on 0 from 1Process 9175 terminated with exit status 0
+Process 9171 terminated with exit status 0
+Process 9172 terminated with exit status 0
+test 9 end
+end tests on Thu Apr 11 18:41:58 EEST 2013
+-----------------------------
+start tests on Thu Apr 11 18:43:07 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 9321 was killed by signal 9
+Process 9322 was killed by signal 9
+Process 9324 was killed by signal 9
+Process 9325 was killed by signal 9
+Process 9323 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 9336 terminated with exit status 0
+Process 9337 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 9345 terminated with exit status 0
+Process 9344 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 9352 terminated with exit status 0
+Process 9353 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+15
+15
+Process 9360 terminated with exit status 0
+15
+15
+Process 9361 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+3 4 
+sending message from 0 to 1
+Recieved on 1 from 0Process 9368 terminated with exit status 0
+Process 9369 terminated with exit status 0
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+3 4 
+sending message from 0 to 1
+Process 9376 terminated with exit status 0
+Recieved on 1 from 0Process 9377 terminated with exit status 0
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+Process 9384 terminated with exit status 255
+Process 9385 terminated with exit status 255
+Process 9386 terminated with exit status 255
+Process 9387 terminated with exit status 255
+Process 9388 terminated with exit status 255
+Process 9389 terminated with exit status 255
+Process 9390 terminated with exit status 255
+Process 9391 terminated with exit status 255
+test 8 end
+test 9 start
+running ./mpirun -np 6 _test/bin/test_matrix_multiply
+3 4 5 6 7 8 
+sending message from 0 to 1
+3 4 5 6 7 8 
+sending message from 0 to 2
+3 4 5 6 7 8 
+sending message from 0 to 3
+3 4 5 6 7 8 
+sending message from 0 to 4
+Recieved on 1 from 03 4 5 6 7 8 
+sending message from 0 to 5
+3 4 5 6 7 8 
+sending message from 0 to 1
+3 4 5 6 7 8 
+sending message from 0 to 2
+3 4 5 6 7 8 
+sending message from 0 to 3
+3 4 5 6 7 8 
+sending message from 0 to 4
+3 4 5 6 7 8 
+sending message from 0 to 5
+Recieved on 2 from 0Recieved on 2 from 03 4 5 6 7 8 
+sending message from 2 to 0
+Process 9400 terminated with exit status 0
+Recieved on 1 from 0Recieved on 3 from 03 4 5 Recieved on 3 from 06 7 3 8 4 
+5 sending message from 1 to 0
+6 7 8 
+sending message from 3 to 0
+Process 9399 terminated with exit status 0
+Process 9401 terminated with exit status 0
+Recieved on 0 from 2Recieved on 0 from 1Recieved on 0 from 3Recieved on 4 from 0Recieved on 4 from 03 4 5 6 7 8 
+sending message from 4 to 0
+Recieved on 0 from 4Process 9402 terminated with exit status 0
+Recieved on 5 from 0Recieved on 5 from 03 4 5 6 7 8 
+sending message from 5 to 0
+Recieved on 0 from 5Process 9403 terminated with exit status 0
+Process 9398 terminated with exit status 0
+test 9 end
+end tests on Thu Apr 11 18:43:07 EEST 2013
+-----------------------------
+start tests on Thu Apr 11 18:44:54 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 9565 was killed by signal 9
+Process 9566 was killed by signal 9
+Process 9567 was killed by signal 9
+Process 9568 was killed by signal 9
+Process 9564 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 9579 terminated with exit status 0
+Process 9580 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 9588 terminated with exit status 0
+Process 9587 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 9595 terminated with exit status 0
+Process 9596 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+15
+15
+Process 9604 terminated with exit status 0
+15
+15
+Process 9603 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+3 4 
+sending message from 0 to 1
+Recieved on 1 from 0Process 9611 terminated with exit status 0
+Process 9612 terminated with exit status 0
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+3 4 
+sending message from 0 to 1
+Process 9619 terminated with exit status 0
+Recieved on 1 from 0Process 9620 terminated with exit status 0
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+Hellow from 7
+Hellow from 5
+Hellow from 2
+Hellow from 0
+3 4 5 6 7 8 9 10 
+sending message from 0 to 1
+Hellow from 1
+Recieved on 1 from 0rank 1 1 recieved from 0 NUMPROCS 8  SIZE 8
+3 4 5 6 7 8 9 10 
+sending message from 1 to 2
+Recieved on 2 from 1rank 2 2 recieved from 1 NUMPROCS 8  SIZE 8
+3 4 5 6 7 8 9 10 Process 9628 terminated with exit status 0
+
+sending message from 2 to 3
+Process 9629 terminated with exit status 0
+Hellow from 3
+Recieved on 3 from 2rank 3 3 recieved from 2 NUMPROCS 8  SIZE 8
+3 4 5 6 7 8 9 10 
+sending message from 3 to 4
+Hellow from 6
+Process 9630 terminated with exit status 0
+Hellow from 4
+Recieved on 4 from 3rank 4 4 recieved from 3 NUMPROCS 8  SIZE 8
+3 4 5 6 7 8 9 10 
+sending message from 4 to 5
+Recieved on 5 from 4rank 5 5 recieved from 4 NUMPROCS 8  SIZE 8
+3 4 5 6 7 8 9 10 
+sending message from 5 to 6
+Process 9631 terminated with exit status 0
+Recieved on 6 from 5Process 9632 terminated with exit status 0
+rank 6 6 recieved from 5 NUMPROCS 8  SIZE 8
+3 4 5 6 7 8 9 10 
+sending message from 6 to 7
+Recieved on 7 from 6rank 7 7 recieved from 6 NUMPROCS 8  SIZE 8
+3 4 5 6 7 8 9 10 
+sending message from 7 to 0
+Process 9633 terminated with exit status 0
+Recieved on 0 from 7Process 9634 terminated with exit status 0
+Process 9627 terminated with exit status 0
+test 8 end
+test 9 start
+running ./mpirun -np 6 _test/bin/test_matrix_multiply
+3 4 5 6 7 8 
+sending message from 0 to 1
+3 4 5 6 7 8 
+sending message from 0 to 2
+3 4 5 6 7 8 
+sending message from 0 to 3
+3 4 5 6 7 8 
+sending message from 0 to 4
+3 4 5 6 7 8 
+sending message from 0 to 5
+3 4 5 6 7 8 
+sending message from 0 to 1
+3 4 5 6 7 8 
+sending message from 0 to 2
+3 4 5 6 7 8 
+sending message from 0 to 3
+3 4 5 6 7 8 
+sending message from 0 to 4
+3 4 5 6 7 8 
+sending message from 0 to 5
+Recieved on 4 from 0Recieved on 4 from 03 4 5 6 7 8 
+sending message from 4 to 0
+Recieved on 0 from 4Process 9645 terminated with exit status 0
+Recieved on 3 from 0Recieved on 3 from 03 4 5 6 7 8 
+sending message from 3 to 0
+Recieved on 0 from 3Process 9644 terminated with exit status 0
+Recieved on 5 from 0Recieved on 5 from 03 4 5 6 7 8 
+sending message from 5 to 0
+Recieved on 0 from 5Process 9646 terminated with exit status 0
+Recieved on 1 from 0Recieved on 1 from 03 4 5 6 7 8 
+sending message from 1 to 0
+Recieved on 0 from 1Process 9642 terminated with exit status 0
+Recieved on 2 from 0Recieved on 2 from 03 4 5 6 7 8 
+sending message from 2 to 0
+Recieved on 0 from 2Process 9641 terminated with exit status 0
+Process 9643 terminated with exit status 0
+test 9 end
+end tests on Thu Apr 11 18:44:54 EEST 2013
+-----------------------------
+start tests on Thu Apr 11 18:49:57 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 9780 was killed by signal 9
+Process 9779 was killed by signal 9
+Process 9781 was killed by signal 9
+Process 9782 was killed by signal 9
+Process 9783 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 9795 terminated with exit status 0
+Process 9794 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 9803 terminated with exit status 0
+Process 9802 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 9811 terminated with exit status 0
+Process 9810 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+15
+15
+15
+Process 9818 terminated with exit status 0
+15
+Process 9819 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+3 4 
+sending message from 0 to 1
+Recieved on 1 from 0Process 9826 terminated with exit status 0
+Process 9827 terminated with exit status 0
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+3 4 
+sending message from 0 to 1
+Recieved on 1 from 0Process 9834 terminated with exit status 0
+Process 9835 terminated with exit status 0
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+Hellow from 2
+Hellow from 0
+3 4 5 6 7 8 9 10 
+sending message from 0 to 1
+Hellow from 5
+Hellow from 7
+Hellow from 1
+Recieved on 1 from 03 4 5 6 7 Hellow from 3
+8 9 10 
+sending message from 1 to 2
+Recieved on 2 from 1Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:45
+Process 9843 terminated with exit status 0
+Process 9844 terminated with exit status 1
+Hellow from 4
+Hellow from 6
+-----------------------------
+start tests on Thu Apr 11 18:54:29 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 9982 was killed by signal 9
+Process 9985 was killed by signal 9
+Process 9984 was killed by signal 9
+Process 9983 was killed by signal 9
+Process 9987 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 9997 terminated with exit status 0
+Process 9998 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 10005 terminated with exit status 0
+Process 10006 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 10013 terminated with exit status 0
+Process 10014 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+15
+15
+Process 10021 terminated with exit status 0
+15
+15
+Process 10022 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+3 4 
+sending message from 0 to 1
+Recieved on 1 from 0Process 10029 terminated with exit status 0
+Process 10030 terminated with exit status 0
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+3 4 
+sending message from 0 to 1
+Process 10037 terminated with exit status 0
+Recieved on 1 from 0Process 10038 terminated with exit status 0
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+ret 0
+Hellow from 1
+ret 0
+Hellow from 0
+3 4 5 6 7 8 9 10 
+sending message from 0 to 1
+Recieved on 1 from 03 4 5 6 7 8 9 10 
+sending message from 1 to 2
+rank 1 has finished
+ret 0
+Hellow from 2
+Recieved on 2 from 1Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:46
+ret 0
+Hellow from 3
+Process 10046 terminated with exit status 0
+Process 10047 terminated with exit status 1
+ret 0
+Hellow from 4
+ret 0
+Hellow from 5
+ret 0
+Hellow from 7
+ret 0
+Hellow from 6
+-----------------------------
+start tests on Thu Apr 11 18:57:49 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 10197 was killed by signal 9
+Process 10199 was killed by signal 9
+Process 10200 was killed by signal 9
+Process 10198 was killed by signal 9
+Process 10196 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 10211 terminated with exit status 0
+Process 10212 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 10219 terminated with exit status 0
+Process 10220 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 10227 terminated with exit status 0
+Process 10228 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+15
+15
+15
+15
+Process 10236 terminated with exit status 0
+Process 10235 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+3 4 
+sending message from 0 to 1
+Recieved on 1 from 0Process 10243 terminated with exit status 0
+Process 10244 terminated with exit status 0
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+3 4 
+sending message from 0 to 1
+Recieved on 1 from 0Process 10251 terminated with exit status 0
+Process 10252 terminated with exit status 0
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+ret 0
+Hellow from 2
+ret 0
+Hellow from 7
+ret 0
+Hellow from 0
+3 4 5 6 7 8 9 10 
+sending message from 0 to 1
+ret 0
+Hellow from 5
+ret 0
+Hellow from 3
+ret 0
+Hellow from 6
+ret 0
+Hellow from 4
+ret 0
+Hellow from 1
+Recieved on 1 from 03 4 5 6 7 8 9 10 
+sending message from 1 to 2
+rank 1 has finished
+Recieved on 2 from 1Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:46
+Process 10260 terminated with exit status 0
+Process 10261 terminated with exit status 1
+-----------------------------
+start tests on Thu Apr 11 19:00:34 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 10310 was killed by signal 9
+Process 10312 was killed by signal 9
+Process 10314 was killed by signal 9
+Process 10313 was killed by signal 9
+Process 10311 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 10325 terminated with exit status 0
+Process 10326 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 10333 terminated with exit status 0
+Process 10334 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 10342 terminated with exit status 0
+Process 10341 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+15
+15
+Process 10349 terminated with exit status 0
+15
+15
+Process 10350 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+3 4 
+sending message from 0 to 1
+Recieved on 1 from 0Process 10357 terminated with exit status 0
+Process 10358 terminated with exit status 0
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+3 4 
+sending message from 0 to 1
+Recieved on 1 from 0Process 10365 terminated with exit status 0
+Process 10366 terminated with exit status 0
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+ret 0
+Hellow from 0
+3 4 5 6 7 8 9 10 
+sending message from 0 to 1
+ret 0
+Hellow from 3
+ret 0
+Hellow from 2
+ret 0
+Hellow from 1
+Recieved on 1 from 03 4 5 6 7 8 9 10 
+sending message from 1 to 2
+rank 1 has finished
+Recieved on 2 from 1Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:46
+Process 10374 terminated with exit status 0
+Process 10375 terminated with exit status 1
+ret 0
+Hellow from 5
+ret 0
+Hellow from 7
+ret 0
+Hellow from 6
+ret 0
+Hellow from 4
+-----------------------------
+start tests on Thu Apr 11 19:01:34 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 10419 was killed by signal 9
+Process 10416 was killed by signal 9
+Process 10418 was killed by signal 9
+Process 10417 was killed by signal 9
+Process 10420 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 10431 terminated with exit status 0
+Process 10432 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 10439 terminated with exit status 0
+Process 10440 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 10447 terminated with exit status 0
+Process 10448 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+0015
+15
+ffffffff15
+ffffffff15
+Process 10455 terminated with exit status 0
+Process 10456 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+3 4 
+sending message from 0 to 1
+Recieved on 1 from 0Process 10463 terminated with exit status 0
+Process 10464 terminated with exit status 0
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+3 4 
+sending message from 0 to 1
+Recieved on 1 from 0Process 10471 terminated with exit status 0
+Process 10472 terminated with exit status 0
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+ret 0
+ret 0
+Hellow from 7
+Hellow from 1
+ret 0
+Hellow from 6
+ret 0
+Hellow from 4
+ret 0
+Hellow from 5
+ret 0
+Hellow from 2
+ret 0
+Hellow from 0
+3 4 5 6 7 8 9 10 
+sending message from 0 to 1
+Recieved on 1 from 03 4 5 6 7 8 9 10 
+sending message from 1 to 2
+rank 1 has finished
+Recieved on 2 from 1Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:46
+Process 10480 terminated with exit status 0
+Process 10481 terminated with exit status 1
+ret 0
+Hellow from 3
+-----------------------------
+start tests on Thu Apr 11 19:05:16 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 10547 was killed by signal 9
+Process 10546 was killed by signal 9
+Process 10548 was killed by signal 9
+Process 10550 was killed by signal 9
+Process 10549 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 10561 terminated with exit status 0
+Process 10562 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 10570 terminated with exit status 0
+Process 10569 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 10577 terminated with exit status 0
+Process 10578 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+015
+015
+ffffffff15
+ffffffff15
+Process 10585 terminated with exit status 0
+Process 10586 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+3 4 
+sending message from 0 to 1
+Recieved on 1 from 0Process 10593 terminated with exit status 0
+Process 10594 terminated with exit status 0
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+3 4 
+sending message from 0 to 1
+Recieved on 1 from 0Process 10601 terminated with exit status 0
+Process 10602 terminated with exit status 0
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+ret 0
+ret 0
+ret 0
+Hellow from 0
+Hellow from 2
+3 4 5 6 7 8 9 10 
+sending message from 0 to 1
+ret 0
+Hellow from 6
+Hellow from 5
+ret 0
+Hellow from 3
+ret 0
+Hellow from 4
+ret 0
+Hellow from 7
+ret 0
+Hellow from 1
+Recieved on 1 from 03 4 5 6 7 8 9 10 
+sending message from 1 to 2
+rank 1 has finished
+Recieved on 2 from 1Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:46
+Process 10611 terminated with exit status 1
+Process 10610 terminated with exit status 0
+-----------------------------
+start tests on Thu Apr 11 19:07:02 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 10667 was killed by signal 9
+Process 10668 was killed by signal 9
+Process 10671 was killed by signal 9
+Process 10670 was killed by signal 9
+Process 10669 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 10682 terminated with exit status 0
+Process 10683 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 10691 terminated with exit status 0
+Process 10690 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 10699 terminated with exit status 0
+Process 10698 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+0015
+15
+ffffffffffffffff15
+15
+Process 10706 terminated with exit status 0
+Process 10707 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+3 4 
+sending message from 0 to 1
+Recieved on 1 from 0Process 10714 terminated with exit status 0
+Process 10715 terminated with exit status 0
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+3 4 
+sending message from 0 to 1
+Recieved on 1 from 0Process 10722 terminated with exit status 0
+Process 10723 terminated with exit status 0
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+ret 0
+ret 0
+Hellow from 2
+Hellow from 1
+ret 0
+Hellow from 0
+3 4 5 6 7 8 9 10 
+sending message from 0 to 1
+Recieved on 1 from 03 4 5 6 7 8 9 10 
+sending message from 1 to 2
+rank 1 has finished
+Recieved on 2 from 1Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:46
+Process 10731 terminated with exit status 0
+Process 10732 terminated with exit status 1
+ret 0
+Hellow from 7
+ret 0
+Hellow from 4
+ret 0
+Hellow from 5
+ret 0
+Hellow from 6
+ret 0
+Hellow from 3
+-----------------------------
+start tests on Thu Apr 11 19:07:11 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 10761 was killed by signal 9
+Process 10759 was killed by signal 9
+Process 10760 was killed by signal 9
+Process 10762 was killed by signal 9
+Process 10763 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 10774 terminated with exit status 0
+Process 10775 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 10782 terminated with exit status 0
+Process 10783 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 10790 terminated with exit status 0
+Process 10791 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+0015
+15
+ffffffff15
+ffffffff15
+Process 10798 terminated with exit status 0
+Process 10799 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+3 4 
+sending message from 0 to 1
+Recieved on 1 from 0Process 10806 terminated with exit status 0
+Process 10807 terminated with exit status 0
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+3 4 
+sending message from 0 to 1
+Recieved on 1 from 0Process 10814 terminated with exit status 0
+Process 10815 terminated with exit status 0
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+ret 0
+Hellow from 0
+3 4 5 ret 0
+6 Hellow from 7
+7 8 9 10 
+sending message from 0 to 1
+ret 0
+Hellow from 3
+ret 0
+ret 0
+Hellow from 4
+Hellow from 5
+ret 0
+Hellow from 6
+ret 0
+Hellow from 2
+ret 0
+Hellow from 1
+Recieved on 1 from 03 4 5 6 7 8 9 10 
+sending message from 1 to 2
+rank 1 has finished
+Recieved on 2 from 1Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:46
+Process 10823 terminated with exit status 0
+Process 10824 terminated with exit status 1
+-----------------------------
+start tests on Thu Apr 11 19:14:08 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 10919 was killed by signal 9
+Process 10918 was killed by signal 9
+Process 10920 was killed by signal 9
+Process 10921 was killed by signal 9
+Process 10922 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+m9383: lib.cpp:42: int MPI_Init(int*, char***): Assertion `mpi_comm_world->queues[i] != (mqd_t)-1' failed.
+m9383: lib.cpp:42: int MPI_Init(int*, char***): Assertion `mpi_comm_world->queues[i] != (mqd_t)-1' failed.
+Process 10934 was killed by signal 6
+Process 10933 was killed by signal 6
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+m9383: lib.cpp:42: int MPI_Init(int*, char***): Assertion `mpi_comm_world->queues[i] != (mqd_t)-1' failed.
+m9383: lib.cpp:42: int MPI_Init(int*, char***): Assertion `mpi_comm_world->queues[i] != (mqd_t)-1' failed.
+Process 10944 was killed by signal 6
+Process 10943 was killed by signal 6
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+m9383: lib.cpp:42: int MPI_Init(int*, char***): Assertion `mpi_comm_world->queues[i] != (mqd_t)-1' failed.
+m9383: lib.cpp:42: int MPI_Init(int*, char***): Assertion `mpi_comm_world->queues[i] != (mqd_t)-1' failed.
+Process 10954 was killed by signal 6
+Process 10953 was killed by signal 6
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+015
+0m9383: lib.cpp:42: int MPI_Init(int*, char***): Assertion `mpi_comm_world->queues[i] != (mqd_t)-1' failed.
+15
+m9383: lib.cpp:42: int MPI_Init(int*, char***): Assertion `mpi_comm_world->queues[i] != (mqd_t)-1' failed.
+Process 10963 was killed by signal 6
+Process 10964 was killed by signal 6
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+m9383: lib.cpp:42: int MPI_Init(int*, char***): Assertion `mpi_comm_world->queues[i] != (mqd_t)-1' failed.
+m9383: lib.cpp:42: int MPI_Init(int*, char***): Assertion `mpi_comm_world->queues[i] != (mqd_t)-1' failed.
+Process 10973 was killed by signal 6
+Process 10974 was killed by signal 6
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+m9383: lib.cpp:42: int MPI_Init(int*, char***): Assertion `mpi_comm_world->queues[i] != (mqd_t)-1' failed.
+m9383: lib.cpp:42: int MPI_Init(int*, char***): Assertion `mpi_comm_world->queues[i] != (mqd_t)-1' failed.
+Process 10983 was killed by signal 6
+Process 10984 was killed by signal 6
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+m9383: lib.cpp:42: int MPI_Init(int*, char***): Assertion `mpi_comm_world->queues[i] != (mqd_t)-1' failed.
+m9383: lib.cpp:42: int MPI_Init(int*, char***): Assertion `mpi_comm_world->queues[i] != (mqd_t)-1' failed.
+m9383: lib.cpp:42: int MPI_Init(int*, char***): Assertion `mpi_comm_world->queues[i] != (mqd_t)-1' failed.
+m9383: lib.cpp:42: int MPI_Init(int*, char***): Assertion `mpi_comm_world->queues[i] != (mqd_t)-1' failed.
+m9383: lib.cpp:42: int MPI_Init(int*, char***): Assertion `mpi_comm_world->queues[i] != (mqd_t)-1' failed.
+m9383: lib.cpp:42: int MPI_Init(int*, char***): Assertion `mpi_comm_world->queues[i] != (mqd_t)-1' failed.
+m9383: lib.cpp:42: int MPI_Init(int*, char***): Assertion `mpi_comm_world->queues[i] != (mqd_t)-1' failed.
+m9383: lib.cpp:42: int MPI_Init(int*, char***): Assertion `mpi_comm_world->queues[i] != (mqd_t)-1' failed.
+Process 10996 was killed by signal 6
+Process 10993 was killed by signal 6
+Process 10999 was killed by signal 6
+Process 10997 was killed by signal 6
+Process 11000 was killed by signal 6
+Process 10995 was killed by signal 6
+Process 10994 was killed by signal 6
+Process 10998 was killed by signal 6
+test 8 end
+test 9 start
+running ./mpirun -np 6 _test/bin/test_matrix_multiply
+m9383: lib.cpp:42: int MPI_Init(int*, char***): Assertion `mpi_comm_world->queues[i] != (mqd_t)-1' failed.
+m9383: lib.cpp:42: int MPI_Init(int*, char***): Assertion `mpi_comm_world->queues[i] != (mqd_t)-1' failed.
+m9383: lib.cpp:42: int MPI_Init(int*, char***): Assertion `mpi_comm_world->queues[i] != (mqd_t)-1' failed.
+m9383: lib.cpp:42: int MPI_Init(int*, char***): Assertion `mpi_comm_world->queues[i] != (mqd_t)-1' failed.
+m9383: lib.cpp:42: int MPI_Init(int*, char***): Assertion `mpi_comm_world->queues[i] != (mqd_t)-1' failed.
+m9383: lib.cpp:42: int MPI_Init(int*, char***): Assertion `mpi_comm_world->queues[i] != (mqd_t)-1' failed.
+Process 11018 was killed by signal 6
+Process 11015 was killed by signal 6
+Process 11016 was killed by signal 6
+Process 11019 was killed by signal 6
+Process 11017 was killed by signal 6
+Process 11020 was killed by signal 6
+test 9 end
+end tests on Thu Apr 11 19:14:09 EEST 2013
+-----------------------------
+start tests on Thu Apr 11 19:14:32 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 11066 was killed by signal 9
+Process 11068 was killed by signal 9
+Process 11065 was killed by signal 9
+Process 11067 was killed by signal 9
+Process 11069 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 11080 terminated with exit status 0
+Process 11081 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 11088 terminated with exit status 0
+Process 11089 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 11096 terminated with exit status 0
+Process 11097 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+015
+0ffffffff15
+15
+ffffffff15
+Process 11104 terminated with exit status 0
+Process 11105 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+3 4 
+sending message from 0 to 1
+Recieved on 1 from 0Process 11112 terminated with exit status 0
+Process 11113 terminated with exit status 0
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+3 4 
+sending message from 0 to 1
+Recieved on 1 from 0Process 11120 terminated with exit status 0
+Process 11121 terminated with exit status 0
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+ret 0
+Hellow from 1
+ret 0
+ret 0
+Hellow from 5
+ret 0
+Hellow from 3
+Hellow from 6
+ret 0
+Hellow from 0
+3 4 5 6 7 8 9 10 
+sending message from 0 to 1
+Recieved on 1 from 03 4 5 6 7 8 9 10 
+sending message from 1 to 2
+rank 1 has finished
+Process 11129 terminated with exit status 0
+ret 0
+Hellow from 7
+ret 0
+Hellow from 4
+ret 0
+Hellow from 2
+Recieved on 2 from 1Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:46
+Process 11130 terminated with exit status 1
+-----------------------------
+start tests on Thu Apr 11 19:17:21 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 11200 was killed by signal 9
+Process 11198 was killed by signal 9
+Process 11199 was killed by signal 9
+Process 11201 was killed by signal 9
+Process 11202 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 11214 terminated with exit status 0
+Process 11213 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 11222 terminated with exit status 0
+Process 11221 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 11229 terminated with exit status 0
+Process 11230 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+015
+015
+ffffffff15
+ffffffff15
+Process 11237 terminated with exit status 0
+Process 11238 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+3 4 
+sending message from 0 to 1
+Recieved on 1 from 0Process 11245 terminated with exit status 0
+Process 11246 terminated with exit status 0
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+3 4 
+sending message from 0 to 1
+Process 11253 terminated with exit status 0
+Recieved on 1 from 0Process 11254 terminated with exit status 0
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+ret 0
+ret 0
+ret 0
+Hellow from 2
+Hellow from 4
+Hellow from 1
+ret 0
+Hellow from 6
+ret 0
+ret 0
+Hellow from 7
+ret 0
+Hellow from 0
+Hellow from 3
+3 4 5 6 7 8 9 10 
+sending message from 0 to 1
+Recieved on 1 from 03 4 5 6 7 8 9 10 
+sending message from 1 to 2
+rank 1 has finished
+Recieved on 2 from 1Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:46
+ret 0
+Hellow from 5
+Process 11262 terminated with exit status 0
+Process 11263 terminated with exit status 1
+-----------------------------
+start tests on Thu Apr 11 19:22:34 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 11359 was killed by signal 9
+Process 11362 was killed by signal 9
+Process 11363 was killed by signal 9
+Process 11361 was killed by signal 9
+Process 11360 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 11374 terminated with exit status 0
+Process 11375 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 11383 terminated with exit status 0
+Process 11382 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 11390 terminated with exit status 0
+Process 11391 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+0015
+15
+ffffffff15
+ffffffff15
+Process 11398 terminated with exit status 0
+Process 11399 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+3 4 
+sending message from 0 to 1
+Recieved on 1 from 0Process 11406 terminated with exit status 0
+Process 11407 terminated with exit status 0
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+3 4 
+sending message from 0 to 1
+Recieved on 1 from 0Process 11414 terminated with exit status 0
+Process 11415 terminated with exit status 0
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+ret 0
+ret 0
+ret 0
+Hellow from 6
+Hellow from 5
+ret 0
+Hellow from 1
+Hellow from 7
+ret 0
+Hellow from 2
+ret 0
+ret 0
+Hellow from 0
+Hellow from 4
+3 4 5 6 7 8 9 10 
+sending message from 0 to 1
+Recieved on 1 from 03 4 5 6 7 8 9 10 
+sending message from 1 to 2
+rank 1 has finished
+Recieved on 2 from 1Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:46
+ret 0
+Hellow from 3
+Process 11423 terminated with exit status 0
+Process 11424 terminated with exit status 1
+-----------------------------
+start tests on Thu Apr 11 20:29:20 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 11699 was killed by signal 9
+Process 11700 was killed by signal 9
+Process 11701 was killed by signal 9
+Process 11698 was killed by signal 9
+Process 11702 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 11713 terminated with exit status 0
+Process 11714 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 11721 terminated with exit status 0
+Process 11722 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 11730 terminated with exit status 0
+Process 11729 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+0015
+15
+ffffffffffffffff15
+15
+Process 11737 terminated with exit status 0
+Process 11738 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+3 4 
+sending message from 0 to 1
+Recieved on 1 from 0Process 11745 terminated with exit status 0
+Process 11746 terminated with exit status 0
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+3 4 
+sending message from 0 to 1
+Recieved on 1 from 0Process 11753 terminated with exit status 0
+Process 11754 terminated with exit status 0
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+ret 0
+Hellow from 1
+ret 0
+Hellow from 5
+ret 0
+Hellow from 0
+3 4 5 6 7 8 9 10 
+ret 0
+sending message from 0 to 1
+Hellow from 4
+Recieved on 1 from 03 4 5 6 7 8 9 10 
+sending message from 1 to 2
+rank 1 has finished
+Process 11762 terminated with exit status 0
+ret 0
+Hellow from 3
+ret 0
+ret 0
+Hellow from 2
+Hellow from 7
+Recieved on 2 from 1Assertion fail_if(stat.MPI_SOURCE != rank - 1) failed at test_ring.c:46
+Process 11763 terminated with exit status 1
+ret 0
+Hellow from 6
+-----------------------------
+start tests on Thu Apr 11 21:36:37 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 12274 was killed by signal 9
+Process 12275 was killed by signal 9
+Process 12277 was killed by signal 9
+Process 12279 was killed by signal 9
+Process 12276 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 12289 terminated with exit status 0
+Process 12290 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 12298 terminated with exit status 0
+Process 12297 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 12306 terminated with exit status 0
+Process 12305 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+(nil)15
+0xffffffff15
+Process 12313 terminated with exit status 0
+(nil)15
+0xffffffff15
+Process 12314 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+Process 12321 terminated with exit status 0
+Process 12322 terminated with exit status 0
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+Process 12329 terminated with exit status 0
+Process 12330 terminated with exit status 0
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+ret 0
+ret 0
+Hellow from 1
+Hellow from 0
+rank 1 has finished
+ret 0
+Hellow from 5
+ret 0
+Hellow from 3
+ret 0
+Hellow from 7
+Process 12338 terminated with exit status 0
+ret 0
+Hellow from 4
+ret 0
+Hellow from 6
+ret 0
+Hellow from 2
+rank 2 has finished
+rank 3 has finished
+Process 12339 terminated with exit status 0
+rank 4 has finished
+rank 5 has finished
+Process 12340 terminated with exit status 0
+Process 12341 terminated with exit status 0
+rank 6 has finished
+Process 12342 terminated with exit status 0
+rank 7 has finished
+Process 12343 terminated with exit status 0
+rank 0 has finished
+Process 12344 terminated with exit status 0
+Process 12337 terminated with exit status 0
+test 8 end
+test 9 start
+running ./mpirun -np 6 _test/bin/test_matrix_multiply
+Process 12352 terminated with exit status 0
+Process 12351 terminated with exit status 0
+Process 12353 terminated with exit status 0
+Process 12354 terminated with exit status 0
+Process 12355 terminated with exit status 0
+Process 12356 terminated with exit status 0
+test 9 end
+end tests on Thu Apr 11 21:36:38 EEST 2013
+-----------------------------
+start tests on Thu Apr 11 21:40:38 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 12416 was killed by signal 9
+Process 12417 was killed by signal 9
+Process 12420 was killed by signal 9
+Process 12419 was killed by signal 9
+Process 12418 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 12431 terminated with exit status 0
+Process 12432 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 12440 terminated with exit status 0
+Process 12439 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 12447 terminated with exit status 0
+Process 12448 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+(nil)15
+(nil)15
+0xffffffff15
+0xffffffff15
+Process 12456 terminated with exit status 0
+Process 12455 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+Process 12463 terminated with exit status 0
+Process 12464 terminated with exit status 0
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+Process 12471 terminated with exit status 0
+Process 12472 terminated with exit status 0
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+ret 0
+Hellow from 3
+ret 0
+Hellow from 1
+ret 0
+Hellow from 6
+ret 0
+Hellow from 7
+ret 0
+Hellow from 0
+ret 0
+ret 0
+Hellow from 2
+ret 0
+Hellow from 5
+Hellow from 4
+rank 1 has finished
+rank 2 has finished
+rank 3 has finished
+Process 12480 terminated with exit status 0
+Process 12481 terminated with exit status 0
+Process 12482 terminated with exit status 0
+rank 4 has finished
+rank 5 has finished
+Process 12484 terminated with exit status 0
+rank 7 has finished
+Process 12483 terminated with exit status 0
+rank 0 has finished
+rank 6 has finished
+Process 12486 terminated with exit status 0
+Process 12479 terminated with exit status 0
+Process 12485 terminated with exit status 0
+test 8 end
+test 9 start
+running ./mpirun -np 6 _test/bin/test_matrix_multiply
+Process 12494 terminated with exit status 0
+Process 12495 terminated with exit status 0
+Process 12496 terminated with exit status 0
+Process 12497 terminated with exit status 0
+Process 12493 terminated with exit status 0
+Process 12498 terminated with exit status 0
+test 9 end
+end tests on Thu Apr 11 21:40:38 EEST 2013
+-----------------------------
+start tests on Thu Apr 11 21:40:41 EEST 2013
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun
+created 5 procs, expected 5
+Process 12528 was killed by signal 9
+Process 12530 was killed by signal 9
+Process 12533 was killed by signal 9
+Process 12529 was killed by signal 9
+Process 12531 was killed by signal 9
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple
+Process 12543 terminated with exit status 0
+Process 12544 terminated with exit status 0
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init
+Process 12552 terminated with exit status 0
+Process 12551 terminated with exit status 0
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize
+Process 12559 terminated with exit status 0
+Process 12560 terminated with exit status 0
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after
+(nil)15
+0xffffffff15
+Process 12568 terminated with exit status 0
+(nil)15
+0xffffffff15
+Process 12567 terminated with exit status 0
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv
+Process 12575 terminated with exit status 0
+Process 12576 terminated with exit status 0
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array
+Process 12583 terminated with exit status 0
+Process 12584 terminated with exit status 0
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring
+ret 0
+ret 0
+Hellow from 0
+ret 0
+Hellow from 7
+ret 0
+Hellow from 5
+ret 0
+Hellow from 3
+ret 0
+Hellow from 4
+Hellow from 2
+ret 0
+Hellow from 1
+rank 1 has finished
+rank 2 has finished
+Process 12592 terminated with exit status 0
+Process 12593 terminated with exit status 0
+rank 3 has finished
+Process 12594 terminated with exit status 0
+rank 5 has finished
+Process 12596 terminated with exit status 0
+rank 4 has finished
+Process 12595 terminated with exit status 0
+ret 0
+Hellow from 6
+rank 6 has finished
+rank 7 has finished
+Process 12597 terminated with exit status 0
+rank 0 has finished
+Process 12598 terminated with exit status 0
+Process 12591 terminated with exit status 0
+test 8 end
+test 9 start
+running ./mpirun -np 6 _test/bin/test_matrix_multiply
+Process 12606 terminated with exit status 0
+Process 12608 terminated with exit status 0
+Process 12607 terminated with exit status 0
+Process 12609 terminated with exit status 0
+Process 12610 terminated with exit status 0
+Process 12605 terminated with exit status 0
+test 9 end
+end tests on Thu Apr 11 21:40:41 EEST 2013

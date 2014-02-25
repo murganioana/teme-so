@@ -1,0 +1,8 @@
+﻿  
+  Microsoft (R) Program Maintenance Utility Version 10.00.30319.01
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  	cl /nologo /W3 /EHsc -D_CRT_SECURE_NO_DEPRECATE /c main.cpp
+  main.cpp
+  	link /nologo /dll /out:libscheduler.dll /implib:libscheduler.lib main.obj
+     Creating library libscheduler.lib and object libscheduler.exp

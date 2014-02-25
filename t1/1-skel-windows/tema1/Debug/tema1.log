@@ -1,0 +1,18 @@
+﻿Build started 3/30/2013 10:51:05 PM.
+     1>Project "C:\Users\tudalex\Dropbox\SO\t1\1-skel-windows\tema1\tema1.vcxproj" on node 2 (Build target(s)).
+     1>Build:
+         nmake
+         
+         Microsoft (R) Program Maintenance Utility Version 11.00.51106.1
+         Copyright (C) Microsoft Corporation.  All rights reserved.
+         
+         	cl /W3 /nologo /EHac /c main.cpp
+         main.cpp
+         	cl /W3 /nologo /EHac /c utils-win.cpp
+         utils-win.cpp
+         	cl /W3 /nologo /EHac main.obj utils-win.obj parser.tab.obj parser.yy.obj /Femini-shell.exe
+     1>Done Building Project "C:\Users\tudalex\Dropbox\SO\t1\1-skel-windows\tema1\tema1.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.42

@@ -1,0 +1,116 @@
+-----------------------------
+start tests on Fri, Apr 12, 2013 6:26:50 PM
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun.exe
+created 5 procs, expected 5
+./_test/run_test.sh: line 75:   860 Killed                  $cmd >> $tmpfile
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple.exe
+_test/bin/test_simple.exe m41 0 2 _test/bin/test_simple.exe 
+_test/bin/test_simple.exe m41 1 2 _test/bin/test_simple.exe 
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init.exe
+_test/bin/test_double_init.exe m41 0 2 _test/bin/test_double_init.exe 
+_test/bin/test_double_init.exe m41 1 2 _test/bin/test_double_init.exe 
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize.exe
+_test/bin/test_double_finalize.exe m41 0 2 _test/bin/test_double_finalize.exe 
+_test/bin/test_double_finalize.exe m41 1 2 _test/bin/test_double_finalize.exe 
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after.exe
+00000000FFFFFFFF00000000FFFFFFFF_test/bin/test_before_after.exe m41 0 2 _test/bin/test_before_after.exe 
+_test/bin/test_before_after.exe m41 1 2 _test/bin/test_before_after.exe 
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv.exe
+_test/bin/test_send_recv.exe m41 0 2 _test/bin/test_send_recv.exe 
+_test/bin/test_send_recv.exe m41 1 2 _test/bin/test_send_recv.exe 
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array.exe
+_test/bin/test_send_recv_array.exe m41 0 2 _test/bin/test_send_recv_array.exe 
+_test/bin/test_send_recv_array.exe m41 1 2 _test/bin/test_send_recv_array.exe 
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring.exe
+_test/bin/test_ring.exe m41 0 8 _test/bin/test_ring.exe 
+_test/bin/test_ring.exe m41 1 8 _test/bin/test_ring.exe 
+_test/bin/test_ring.exe m41 2 8 _test/bin/test_ring.exe 
+_test/bin/test_ring.exe m41 3 8 _test/bin/test_ring.exe 
+_test/bin/test_ring.exe m41 4 8 _test/bin/test_ring.exe 
+_test/bin/test_ring.exe m41 5 8 _test/bin/test_ring.exe 
+_test/bin/test_ring.exe m41 6 8 _test/bin/test_ring.exe 
+_test/bin/test_ring.exe m41 7 8 _test/bin/test_ring.exe 
+test 8 end
+test 9 start
+running ./mpirun -np 6 _test/bin/test_matrix_multiply
+_test/bin/test_matrix_multiply m41 0 6 _test/bin/test_matrix_multiply 
+_test/bin/test_matrix_multiply m41 1 6 _test/bin/test_matrix_multiply 
+_test/bin/test_matrix_multiply m41 2 6 _test/bin/test_matrix_multiply 
+_test/bin/test_matrix_multiply m41 3 6 _test/bin/test_matrix_multiply 
+_test/bin/test_matrix_multiply m41 4 6 _test/bin/test_matrix_multiply 
+_test/bin/test_matrix_multiply m41 5 6 _test/bin/test_matrix_multiply 
+test 9 end
+end tests on Fri, Apr 12, 2013 6:26:53 PM
+-----------------------------
+start tests on Fri, Apr 12, 2013 6:27:06 PM
+test 1 start
+running ./mpirun -np 5 _test/bin/test_mpirun.exe
+created 5 procs, expected 5
+./_test/run_test.sh: line 75:  3020 Killed                  $cmd >> $tmpfile
+test 1 end
+test 2 start
+running ./mpirun -np 2 _test/bin/test_simple.exe
+_test/bin/test_simple.exe m41 0 2 _test/bin/test_simple.exe 
+_test/bin/test_simple.exe m41 1 2 _test/bin/test_simple.exe 
+test 2 end
+test 3 start
+running ./mpirun -np 2 _test/bin/test_double_init.exe
+_test/bin/test_double_init.exe m41 0 2 _test/bin/test_double_init.exe 
+_test/bin/test_double_init.exe m41 1 2 _test/bin/test_double_init.exe 
+test 3 end
+test 4 start
+running ./mpirun -np 2 _test/bin/test_double_finalize.exe
+_test/bin/test_double_finalize.exe m41 0 2 _test/bin/test_double_finalize.exe 
+_test/bin/test_double_finalize.exe m41 1 2 _test/bin/test_double_finalize.exe 
+test 4 end
+test 5 start
+running ./mpirun -np 2 _test/bin/test_before_after.exe
+00000000FFFFFFFF00000000FFFFFFFF_test/bin/test_before_after.exe m41 0 2 _test/bin/test_before_after.exe 
+_test/bin/test_before_after.exe m41 1 2 _test/bin/test_before_after.exe 
+test 5 end
+test 6 start
+running ./mpirun -np 2 _test/bin/test_send_recv.exe
+_test/bin/test_send_recv.exe m41 0 2 _test/bin/test_send_recv.exe 
+_test/bin/test_send_recv.exe m41 1 2 _test/bin/test_send_recv.exe 
+test 6 end
+test 7 start
+running ./mpirun -np 2 _test/bin/test_send_recv_array.exe
+_test/bin/test_send_recv_array.exe m41 0 2 _test/bin/test_send_recv_array.exe 
+_test/bin/test_send_recv_array.exe m41 1 2 _test/bin/test_send_recv_array.exe 
+test 7 end
+test 8 start
+running ./mpirun -np 8 _test/bin/test_ring.exe
+_test/bin/test_ring.exe m41 0 8 _test/bin/test_ring.exe 
+_test/bin/test_ring.exe m41 1 8 _test/bin/test_ring.exe 
+_test/bin/test_ring.exe m41 2 8 _test/bin/test_ring.exe 
+_test/bin/test_ring.exe m41 3 8 _test/bin/test_ring.exe 
+_test/bin/test_ring.exe m41 4 8 _test/bin/test_ring.exe 
+_test/bin/test_ring.exe m41 5 8 _test/bin/test_ring.exe 
+_test/bin/test_ring.exe m41 6 8 _test/bin/test_ring.exe 
+_test/bin/test_ring.exe m41 7 8 _test/bin/test_ring.exe 
+test 8 end
+test 9 start
+running ./mpirun -np 6 _test/bin/test_matrix_multiply
+_test/bin/test_matrix_multiply m41 0 6 _test/bin/test_matrix_multiply 
+_test/bin/test_matrix_multiply m41 1 6 _test/bin/test_matrix_multiply 
+_test/bin/test_matrix_multiply m41 2 6 _test/bin/test_matrix_multiply 
+_test/bin/test_matrix_multiply m41 3 6 _test/bin/test_matrix_multiply 
+_test/bin/test_matrix_multiply m41 4 6 _test/bin/test_matrix_multiply 
+_test/bin/test_matrix_multiply m41 5 6 _test/bin/test_matrix_multiply 
+test 9 end
+end tests on Fri, Apr 12, 2013 6:27:10 PM
